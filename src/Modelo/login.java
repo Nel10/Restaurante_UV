@@ -1,7 +1,6 @@
 
 package Modelo;
 
-import javax.swing.JProgressBar;
 
 public class login {
     private int id;
@@ -9,20 +8,19 @@ public class login {
     private String correo;
     private String pass;
     private String rol;
-    private JProgressBar barra; 
+     
 
 
     public login() {
     }
 
-    public login(int id, String nombre, String correo, String pass, String rol, JProgressBar barra) {
+    public login(int id, String nombre, String correo, String pass, String rol) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
         this.pass = pass;
         this.rol = rol;
-        this.barra = barra;
-        
+            
     }
 
 
@@ -64,17 +62,5 @@ public class login {
 
     public void setRol(String rol) {
         this.rol = rol;
-    }
-
-    public JProgressBar getBarra() {
-        return barra;
-    }
-
-    public void setBarra(JProgressBar barra) {
-        this.barra = barra;
-    }
-
-
-    
-    
+    }   
 }

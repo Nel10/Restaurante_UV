@@ -28,11 +28,10 @@ public class FrmLogin extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
         txtPass = new javax.swing.JPasswordField();
-        btnIniciar = new javax.swing.JButton();
-        btnSalirLogin = new javax.swing.JButton();
+        btnIniciarLog = new javax.swing.JButton();
+        btnSalirLog = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        barra = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -62,18 +61,20 @@ public class FrmLogin extends javax.swing.JFrame {
         txtPass.setBorder(null);
         jPanel2.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 250, 35));
 
-        btnIniciar.setBackground(new java.awt.Color(0, 0, 0));
-        btnIniciar.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        btnIniciar.setForeground(new java.awt.Color(255, 255, 255));
-        btnIniciar.setText("Login");
-        btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 93, 35));
+        btnIniciarLog.setBackground(new java.awt.Color(0, 0, 0));
+        btnIniciarLog.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        btnIniciarLog.setForeground(new java.awt.Color(255, 255, 255));
+        btnIniciarLog.setText("Login");
+        btnIniciarLog.setActionCommand("LoginLN");
+        btnIniciarLog.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnIniciarLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 93, 35));
 
-        btnSalirLogin.setBackground(new java.awt.Color(204, 0, 0));
-        btnSalirLogin.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        btnSalirLogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnSalirLogin.setText("Salir");
-        jPanel2.add(btnSalirLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 93, 35));
+        btnSalirLog.setBackground(new java.awt.Color(204, 0, 0));
+        btnSalirLog.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        btnSalirLog.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalirLog.setText("Salir");
+        btnSalirLog.setActionCommand("SalirLN");
+        jPanel2.add(btnSalirLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 93, 35));
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -95,10 +96,6 @@ public class FrmLogin extends javax.swing.JFrame {
         );
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 110));
-
-        barra.setBackground(new java.awt.Color(255, 255, 255));
-        barra.setForeground(new java.awt.Color(0, 110, 255));
-        jPanel2.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 250, 30));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 430));
 
@@ -142,25 +139,14 @@ public class FrmLogin extends javax.swing.JFrame {
             }
         });
     }
+ //Metodos get para el manejo por MVC
 
-    public JProgressBar getBarra() {
-        return barra;
+    public JButton getBtnIniciarLog() {
+        return btnIniciarLog;
     }
 
-    public JButton getBtnIniciar() {
-        return btnIniciar;
-    }
-
-    public JButton getBtnSalirLogin() {
-        return btnSalirLogin;
-    }
-
-    public JPanel getjPanel2() {
-        return jPanel2;
-    }
-
-    public JPanel getjPanel4() {
-        return jPanel4;
+    public JButton getBtnSalirLog() {
+        return btnSalirLog;
     }
 
     public JTextField getTxtCorreo() {
@@ -171,11 +157,11 @@ public class FrmLogin extends javax.swing.JFrame {
         return txtPass;
     }
     
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JProgressBar barra;
-    public javax.swing.JButton btnIniciar;
-    public javax.swing.JButton btnSalirLogin;
+    public javax.swing.JButton btnIniciarLog;
+    public javax.swing.JButton btnSalirLog;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

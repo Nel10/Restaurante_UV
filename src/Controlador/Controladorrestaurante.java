@@ -40,12 +40,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JProgressBar;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.Timer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
@@ -58,24 +56,54 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
     //Declaracionde componentes en lo grafico vista login
     login lg = new login();
     LoginDao login = new LoginDao();
-    private Timer tiempo;
-    int contador;
-    int segundos = 30;
     
     
-    // Declaración de componentes gráficos vista Sistema
+    
+    // Declaración de componentes gráficos vistas Sistema y Login
+   
+
+    // Etiquetas (JLabel)
     private JLabel labelLogo;
-    private JTextField txtIdHistorialPedido, txtIdConfig, txtIdPedido, txtIdPlato, txtIdSala, txtTempIdSala, txtTempNumMesa, txtNombreSala, txtMesas, txtNombrePlato, txtPrecioPlato, txtBuscarPlato;
-    private JTextArea txtMensaje;
-    private JTable TablePedidos, TableUsuarios, tableMenu, tblTemPlatos, tableSala, tableFinalizar, TablePlatos ;
     private JLabel LabelVendedor, totalMenu, totalFinalizar, txtFechaHora, txtSalaFinalizar, txtNumMesaFinalizar;
-    private JTabbedPane jTabbedPane1;
-    private JPanel PanelSalas, PanelMesas;
-    private JButton btnSala, btnConfig, btnFinalizar, btnPdfPedido;
+
+    // Campos de texto (JTextField)
+    private JTextField txtIdHistorialPedido, txtIdConfig, txtIdPedido, txtIdPlato, txtIdSala;
+    private JTextField txtTempIdSala, txtTempNumMesa, txtNombreSala, txtMesas;
+    private JTextField txtNombrePlato, txtPrecioPlato, txtBuscarPlato;
     private JTextField txtNombre, txtCorreo, txtRucConfig, txtNombreConfig, txtTelefonoConfig, txtDireccionConfig;
-    private JPasswordField txtPass; // Campo para contraseñas
-    private JComboBox<String> cbxRol; // Combobox para roles
-    private JTextField txtComentario; // Agregado para evitar error en "Agregar"
+    private JTextField txtComentario; // Comentario adicional
+
+    // Campo de contraseña (JPasswordField)
+    private JPasswordField txtPass;
+
+    // Área de texto (JTextArea)
+    private JTextArea txtMensaje;
+
+    // Tablas (JTable)
+    private JTable TablePedidos, TableUsuarios, tableMenu, tblTemPlatos, tableSala, tableFinalizar, TablePlatos;
+
+    // Pestañas (JTabbedPane)
+    private JTabbedPane jTabbedPane1;
+
+    // Paneles (JPanel)
+    private JPanel PanelSalas, PanelMesas;
+
+    
+    //rEVISAR
+    // Comboboxes (JComboBox)
+    private JComboBox<String> cbxRol; // Para roles
+
+    // Botones de Sistema
+    private JButton btnActualizarConfig, btnActualizarSala, btnAddPlato, btnAgregarA, btnConfig;
+    private JButton btnEditarPlato, btnEliminarPlato, btnEliminarSala, btnEliminarTempPlato;
+    private JButton btnFinalizar, btnGenerarPedido, btnGuardarPlato, btnIniciar;
+    private JButton btnNuevoPlato, btnNuevoSala, btnPdfPedido, btnPlatos;
+    private JButton btnRegistrarSala, btnSala, btnUsuarios, btnVentas;
+
+    // Botones de Login
+    private JButton btnIniciarLog, btnSalirLog;
+
+
     
     
    
@@ -113,10 +141,42 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
     //Objeto de las vistas 
     Vista.FrmLogin ObjV1;
     Vista.Sistema ObjV2;
+    
 
     
+    
     //Se creo el constructor
-    public Controladorrestaurante(login priv) {
+    public Controladorrestaurante(login priv) {//resibe un parametro login de tipo priv
+        
+        //Asignacion de oyentes 
+        //De sistema
+        ObjV2.getBtnActualizarConfig().addActionListener(this);
+        ObjV2.getBtnActualizarSala().addActionListener(this);
+        ObjV2.getBtnAddPlato().addActionListener(this);
+        ObjV2.getBtnAgregarA().addActionListener(this);
+        ObjV2.getBtnConfig().addActionListener(this);
+        ObjV2.getBtnEditarPlato().addActionListener(this);
+        ObjV2.getBtnEliminarPlato().addActionListener(this);
+        ObjV2.getBtnEliminarSala().addActionListener(this);
+        ObjV2.getBtnEliminarTempPlato().addActionListener(this);
+        ObjV2.getBtnFinalizar().addActionListener(this);
+        ObjV2.getBtnGenerarPedido().addActionListener(this);
+        ObjV2.getBtnGuardarPlato().addActionListener(this);
+        ObjV2.getBtnIniciar().addActionListener(this);
+        ObjV2.getBtnNuevoPlato().addActionListener(this);
+        ObjV2.getBtnNuevoSala().addActionListener(this);
+        ObjV2.getBtnPdfPedido().addActionListener(this);
+        ObjV2.getBtnPlatos().addActionListener(this);
+        ObjV2.getBtnRegistrarSala().addActionListener(this);
+        ObjV2.getBtnSala().addActionListener(this);
+        ObjV2.getBtnUsuarios().addActionListener(this);
+        ObjV2.getBtnVentas().addActionListener(this);
+        
+        //De login
+        ObjV1.getBtnIniciarLog().addActionListener(this);
+        ObjV1.getBtnSalirLog().addActionListener(this);  
+        
+        
         // Inicialización de las variables gráficas no definidas
         txtNombre = new JTextField();
         txtCorreo = new JTextField();
@@ -127,7 +187,7 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
         txtTelefonoConfig = new JTextField();
         txtDireccionConfig = new JTextField();
         txtComentario = new JTextField();
-        JProgressBar barra = new JProgressBar();
+        
         
         
         
@@ -137,11 +197,11 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
         
         //Desde aqui
         if (labelLogo != null){
-            ImageIcon img =null;
+            //ImageIcon img =null;
             //ImageIcon img = new ImageIcon(getClass().getResource("/Img/logo.png"));
-            Image igmEscalada = img.getImage().getScaledInstance(labelLogo.getWidth(), labelLogo.getHeight(), Image.SCALE_SMOOTH);
-            Icon icono = new ImageIcon(igmEscalada);
-            labelLogo.setIcon(icono);
+            //Image igmEscalada = img.getImage().getScaledInstance(labelLogo.getWidth(), labelLogo.getHeight(), Image.SCALE_SMOOTH);
+            //Icon icono = new ImageIcon(igmEscalada);
+            //labelLogo.setIcon(icono);
         }
         
         //this.setIconImage(img.getImage());
@@ -170,8 +230,11 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
         //Hasta Aqui
         
         panelSalas();
+        
+        //Vistas
         ObjV1 = new Vista.FrmLogin();
         //ObjV2 = new Vista.Sistema();
+        ObjV2.setVisible(false);
     }
     
     
@@ -181,38 +244,24 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
     
     //Funciones internas de la vista Login    
     
-    public void validar(){
-        String correo = txtCorreo.getText();
-        String pass = String.valueOf(txtPass.getPassword());
-        if (!"".equals(correo) || !"".equals(pass)) {
-            
-            lg = login.log(correo, pass);
-            if (lg.getCorreo()!= null && lg.getPass() != null) {                                
-                JOptionPane.showMessageDialog(null, "Bienvenido");
-            }else{
-                JOptionPane.showMessageDialog(null, "Correo o la Contraseña incorrecta");
-            }
+    public void validar() {
+    String correo = txtCorreo.getText();
+    String pass = String.valueOf(txtPass.getPassword());
+    if (!"".equals(correo) && !"".equals(pass)) {
+        lg = login.log(correo, pass);
+        if (lg.getCorreo() != null && lg.getPass() != null) {
+            JOptionPane.showMessageDialog(null, "Bienvenido");
+            //ObjV2 = new Vista.Sistema(); // Inicializa la ventana del sistema
+            ObjV2.setVisible(true);     // Muestra la ventana del sistema
+            ObjV1.dispose();            // Cierra la ventana de login
+        } else {
+            JOptionPane.showMessageDialog(null, "Correo o la Contraseña incorrecta");
         }
+    } else {
+        JOptionPane.showMessageDialog(null, "Por favor complete todos los campos");
     }
-    
-    /*
-    public class BarraProgreso implements ActionListener {
+}
 
-        @Override
-        public void actionPerformed(ActionEvent ae) {
-            contador++;
-            barra.setValue(contador);
-            if (contador == 100) {
-                tiempo.stop();
-                if (barra.getValue() == 100) {
-                    Sistema sis = new Sistema(lg);
-                    sis.setVisible(true);
-                    dispose();
-                }
-            }
-        }
-    }
-    */
     
     public class LoginController {
         private FrmLogin view;
@@ -224,7 +273,6 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
             view.setLocationRelativeTo(null);
             view.getTxtCorreo().setText("admin");
             view.getTxtPass().setText("admin");
-            view.getBarra().setVisible(false);
 
             // Configurar el ícono
             ImageIcon img = new ImageIcon(getClass().getResource("/Img/logo.png"));
@@ -744,11 +792,11 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
             LimpiarPlatos();
         }  
         
-        if (e.getActionCommand().equals("Login")){
+        if (e.getActionCommand().equals("LoginLN")){
             validar();
         }
         
-        if (e.getActionCommand().equals("Salir")){
+        if (e.getActionCommand().equals("SalirLN")){
             System.exit(0);
         }
         
@@ -839,7 +887,7 @@ public class Controladorrestaurante implements ActionListener, KeyListener{//Se 
         Object source = evt.getSource();
         
         if (source == txtPrecioPlato) {
-            event.numberDecimalKeyPress(evt, txtPrecioPlato);  // Suponiendo que 'event' es una clase que maneja validaciones
+            event.numberDecimalKeyPress(evt, txtPrecioPlato);  
         }
     }
 
