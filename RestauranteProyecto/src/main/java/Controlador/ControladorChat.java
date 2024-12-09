@@ -125,7 +125,7 @@ public class ChatApp {
         // Start the server in a new thread
         new Thread(ChatApp::startServer).start();
         // Start the chat application GUI
-        SwingUtilities.invokeLater(ChatApp::new);
+        //SwingUtilities.invokeLater(ChatApp::new);
     }
 }
     

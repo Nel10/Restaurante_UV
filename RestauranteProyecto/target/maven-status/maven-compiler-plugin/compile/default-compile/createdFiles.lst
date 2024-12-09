@@ -20,7 +20,9 @@ Vista\MeseroVista$15.class
 Vista\AdminVista$9.class
 Vista\AdminVista$2.class
 Modelo\Producto.class
+Controlador\ControladorChat$ChatApp.class
 Vista\AdminVista$16.class
+Controlador\ControladorChat$ChatApp$1.class
 Vista\MeseroVista$9.class
 Vista\MeseroVista$16.class
 Vista\AdminVista$6.class
@@ -29,7 +31,9 @@ Vista\AdminVista$13.class
 Vista\LoginVista$3.class
 Vista\MeseroVista$2.class
 Vista\AdminVista$10.class
+Controlador\ControladorChat$ChatApp$ClientHandler.class
 Vista\MeseroVista$8.class
+Controlador\ControladorChat.class
 Vista\MeseroVista.class
 Controlador\LoginControlador.class
 Vista\MeseroVista$12.class

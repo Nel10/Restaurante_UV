@@ -40,6 +40,7 @@ public class MeseroVista extends javax.swing.JFrame implements ActionListener{
         mesaGroup.add(rdBtnMesa2);
         mesaGroup.add(rdBtnMesa3);
         mesaGroup.add(rdBtnMesa4);
+        mesaGroup.add(btnCrearPedido);
         this.meseroControlador = meseroControlador;
         btnCrearPedido.addActionListener(this);
         //btnCrearPedido.addActionListener(e -> meseroControlador.crearPedido());
