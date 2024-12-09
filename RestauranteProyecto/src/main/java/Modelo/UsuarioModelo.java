@@ -21,7 +21,7 @@ public class UsuarioModelo {
 
     public UsuarioModelo() {
         try {
-            String url = "jdbc:mysql://localhost:3306/restaurante";
+            String url = "jdbc:mysql://localhost:3306/restaurantee";
             String usuario = "root";
             String contraseña = "";
             conexion = DriverManager.getConnection(url, usuario, contraseña);

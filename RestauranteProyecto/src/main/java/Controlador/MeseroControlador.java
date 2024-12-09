@@ -4,6 +4,7 @@
  */
 package Controlador;
 
+import Conexion.ConexionBD;
 import Modelo.Pedido;
 import Modelo.Producto;
 import Vista.MeseroVista;
@@ -20,9 +21,11 @@ public class MeseroControlador {
     
     public MeseroControlador(MeseroVista meseVista, Connection conexion) {
         this.meseVista = meseVista;
-        this.conexion = conexion;
+        ConexionBD conexionBD = new ConexionBD(); 
+        this.conexion = conexionBD.getConexion();
         this.pedido = new Pedido(1, 1, new Timestamp(System.currentTimeMillis()), "EN PROCESO", 5, conexion);
-        this.meseVista.actualizarVista(pedido);
+        meseVista.actualizarVista(pedido);
+ 
         inicializarEventos();
     }
 

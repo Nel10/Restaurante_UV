@@ -41,6 +41,9 @@ public class MeseroVista extends javax.swing.JFrame implements ActionListener{
         mesaGroup.add(rdBtnMesa3);
         mesaGroup.add(rdBtnMesa4);
         mesaGroup.add(btnCrearPedido);
+        mesaGroup.add(btnIniciarChat);
+        mesaGroup.add(btnCerrarChat);
+        mesaGroup.add(btnEnviarChat);
         this.meseroControlador = meseroControlador;
         btnCrearPedido.addActionListener(this);
         //btnCrearPedido.addActionListener(e -> meseroControlador.crearPedido());
@@ -604,12 +607,84 @@ public class MeseroVista extends javax.swing.JFrame implements ActionListener{
         // TODO add your handling code here:
     }//GEN-LAST:event_btnModificarPedidoActionPerformed
 
-    public JPanel getBackgroundPanel() {
-        return Background;
+    public MeseroControlador getMeseroControlador() {
+        return meseroControlador;
     }
 
-    public void setBackground(JPanel Background) {
-        this.Background = Background;
+    public void setMeseroControlador(MeseroControlador meseroControlador) {
+        this.meseroControlador = meseroControlador;
+    }
+
+    public JButton getBtnBuscarCerrarPedido1() {
+        return btnBuscarCerrarPedido1;
+    }
+
+    public void setBtnBuscarCerrarPedido1(JButton btnBuscarCerrarPedido1) {
+        this.btnBuscarCerrarPedido1 = btnBuscarCerrarPedido1;
+    }
+
+    public JButton getBtnBuscarModificarPedido() {
+        return btnBuscarModificarPedido;
+    }
+
+    public void setBtnBuscarModificarPedido(JButton btnBuscarModificarPedido) {
+        this.btnBuscarModificarPedido = btnBuscarModificarPedido;
+    }
+
+    public JButton getBtnCerrarChat() {
+        return btnCerrarChat;
+    }
+
+    public void setBtnCerrarChat(JButton btnCerrarChat) {
+        this.btnCerrarChat = btnCerrarChat;
+    }
+
+    public JButton getBtnCerrarPedido() {
+        return btnCerrarPedido;
+    }
+
+    public void setBtnCerrarPedido(JButton btnCerrarPedido) {
+        this.btnCerrarPedido = btnCerrarPedido;
+    }
+
+    public JButton getBtnCrearPedido() {
+        return btnCrearPedido;
+    }
+
+    public void setBtnCrearPedido(JButton btnCrearPedido) {
+        this.btnCrearPedido = btnCrearPedido;
+    }
+
+    public JButton getBtnEnviarChat() {
+        return btnEnviarChat;
+    }
+
+    public void setBtnEnviarChat(JButton btnEnviarChat) {
+        this.btnEnviarChat = btnEnviarChat;
+    }
+
+    public ButtonGroup getBtnGrupo() {
+        return btnGrupo;
+    }
+
+    public void setBtnGrupo(ButtonGroup btnGrupo) {
+        this.btnGrupo = btnGrupo;
+    }
+
+    public JButton getBtnIniciarChat() {
+        return btnIniciarChat;
+    }
+
+    public void setBtnIniciarChat(JButton btnIniciarChat) {
+        this.btnIniciarChat = btnIniciarChat;
+    }
+
+    public JButton getBtnModificarPedido() {
+        return btnModificarPedido;
+    }
+
+    public void setBtnModificarPedido(JButton btnModificarPedido) {
+        this.btnModificarPedido = btnModificarPedido;
     }
 
     public JSpinner getCantBebidas() {
@@ -692,92 +767,76 @@ public class MeseroVista extends javax.swing.JFrame implements ActionListener{
         this.cbxSancocho = cbxSancocho;
     }
 
-    public JButton getjButton1() {
-        return btnCrearPedido;
+    public JTextArea getjTextArea1() {
+        return jTextArea1;
     }
 
-    public void setjButton1(JButton jButton1) {
-        this.btnCrearPedido = jButton1;
+    public void setjTextArea1(JTextArea jTextArea1) {
+        this.jTextArea1 = jTextArea1;
     }
 
-    public JLabel getjLabel10() {
-        return jLabel10;
+    public JRadioButton getRdBtnMesa1() {
+        return rdBtnMesa1;
     }
 
-    public void setjLabel10(JLabel jLabel10) {
-        this.jLabel10 = jLabel10;
+    public void setRdBtnMesa1(JRadioButton rdBtnMesa1) {
+        this.rdBtnMesa1 = rdBtnMesa1;
     }
 
-    public JLabel getjLabel2() {
-        return jLabel2;
+    public JRadioButton getRdBtnMesa2() {
+        return rdBtnMesa2;
     }
 
-    public void setjLabel2(JLabel jLabel2) {
-        this.jLabel2 = jLabel2;
+    public void setRdBtnMesa2(JRadioButton rdBtnMesa2) {
+        this.rdBtnMesa2 = rdBtnMesa2;
     }
 
-    public JLabel getjLabel3() {
-        return jLabel3;
+    public JRadioButton getRdBtnMesa3() {
+        return rdBtnMesa3;
     }
 
-    public void setjLabel3(JLabel jLabel3) {
-        this.jLabel3 = jLabel3;
+    public void setRdBtnMesa3(JRadioButton rdBtnMesa3) {
+        this.rdBtnMesa3 = rdBtnMesa3;
     }
 
-    public JButton getBtnBuscarCerrarPedido1() {
-        return btnBuscarCerrarPedido1;
+    public JRadioButton getRdBtnMesa4() {
+        return rdBtnMesa4;
     }
 
-    public void setBtnBuscarCerrarPedido1(JButton btnBuscarCerrarPedido1) {
-        this.btnBuscarCerrarPedido1 = btnBuscarCerrarPedido1;
+    public void setRdBtnMesa4(JRadioButton rdBtnMesa4) {
+        this.rdBtnMesa4 = rdBtnMesa4;
     }
 
-    public JButton getBtnBuscarModificarPedido() {
-        return btnBuscarModificarPedido;
+    public JRadioButton getRdBtnMesa5() {
+        return rdBtnMesa5;
     }
 
-    public void setBtnBuscarModificarPedido(JButton btnBuscarModificarPedido) {
-        this.btnBuscarModificarPedido = btnBuscarModificarPedido;
+    public void setRdBtnMesa5(JRadioButton rdBtnMesa5) {
+        this.rdBtnMesa5 = rdBtnMesa5;
     }
 
-    public JButton getBtnCerrarChat() {
-        return btnCerrarChat;
+    public JRadioButton getRdBtnMesa6() {
+        return rdBtnMesa6;
     }
 
-    public void setBtnCerrarChat(JButton btnCerrarChat) {
-        this.btnCerrarChat = btnCerrarChat;
+    public void setRdBtnMesa6(JRadioButton rdBtnMesa6) {
+        this.rdBtnMesa6 = rdBtnMesa6;
     }
 
-    public JButton getBtnCerrarPedido() {
-        return btnCerrarPedido;
+    public JRadioButton getRdBtnMesa7() {
+        return rdBtnMesa7;
     }
 
-    public void setBtnCerrarPedido(JButton btnCerrarPedido) {
-        this.btnCerrarPedido = btnCerrarPedido;
+    public void setRdBtnMesa7(JRadioButton rdBtnMesa7) {
+        this.rdBtnMesa7 = rdBtnMesa7;
     }
 
-    public JButton getBtnEnviarChat() {
-        return btnEnviarChat;
+    public JRadioButton getRdBtnMesa8() {
+        return rdBtnMesa8;
     }
 
-    public void setBtnEnviarChat(JButton btnEnviarChat) {
-        this.btnEnviarChat = btnEnviarChat;
-    }
-
-    public JButton getBtnIniciarChat() {
-        return btnIniciarChat;
-    }
-
-    public void setBtnIniciarChat(JButton btnIniciarChat) {
-        this.btnIniciarChat = btnIniciarChat;
-    }
-
-    public JButton getBtnModificarPedido() {
-        return btnModificarPedido;
-    }
-
-    public void setBtnModificarPedido(JButton btnModificarPedido) {
-        this.btnModificarPedido = btnModificarPedido;
+    public void setRdBtnMesa8(JRadioButton rdBtnMesa8) {
+        this.rdBtnMesa8 = rdBtnMesa8;
     }
 
     public JRadioButton getRdBtnModificarMesa1() {
@@ -828,190 +887,7 @@ public class MeseroVista extends javax.swing.JFrame implements ActionListener{
         this.txtaDetallePedidoMesa = txtaDetallePedidoMesa;
     }
 
-    public JLabel getjLabel4() {
-        return jLabel4;
-    }
-
-    public void setjLabel4(JLabel jLabel4) {
-        this.jLabel4 = jLabel4;
-    }
-
-    public JLabel getjLabel5() {
-        return jLabel5;
-    }
-
-    public void setjLabel5(JLabel jLabel5) {
-        this.jLabel5 = jLabel5;
-    }
-
-    public JLabel getjLabel6() {
-        return jLabel6;
-    }
-
-    public void setjLabel6(JLabel jLabel6) {
-        this.jLabel6 = jLabel6;
-    }
-
-    public JLabel getjLabel7() {
-        return jLabel7;
-    }
-
-    public void setjLabel7(JLabel jLabel7) {
-        this.jLabel7 = jLabel7;
-    }
-
-    public JLabel getjLabel8() {
-        return jLabel8;
-    }
-
-    public void setjLabel8(JLabel jLabel8) {
-        this.jLabel8 = jLabel8;
-    }
-
-    public JLabel getjLabel9() {
-        return jLabel9;
-    }
-
-    public void setjLabel9(JLabel jLabel9) {
-        this.jLabel9 = jLabel9;
-    }
-
-
-    public JTabbedPane getjTabbedPane1() {
-        return jTabbedPane1;
-    }
-
-    public void setjTabbedPane1(JTabbedPane jTabbedPane1) {
-        this.jTabbedPane1 = jTabbedPane1;
-    }
-
-    public JLabel getLabelMesas() {
-        return labelMesas;
-    }
-
-    public void setLabelMesas(JLabel labelMesas) {
-        this.labelMesas = labelMesas;
-    }
-
-    public JLabel getLabelProductos() {
-        return labelProductos;
-    }
-
-    public void setLabelProductos(JLabel labelProductos) {
-        this.labelProductos = labelProductos;
-    }
-
-    public JLabel getLabelProductos1() {
-        return labelProductos1;
-    }
-
-    public void setLabelProductos1(JLabel labelProductos1) {
-        this.labelProductos1 = labelProductos1;
-    }
-
-    public JLabel getLabelProductos2() {
-        return labelProductos2;
-    }
-
-    public void setLabelProductos2(JLabel labelProductos2) {
-        this.labelProductos2 = labelProductos2;
-    }
-
-    public JLabel getLabelProductos3() {
-        return labelProductos3;
-    }
-
-    public void setLabelProductos3(JLabel labelProductos3) {
-        this.labelProductos3 = labelProductos3;
-    }
-
-    public JLabel getLabelProductos4() {
-        return labelProductos4;
-    }
-
-    public void setLabelProductos4(JLabel labelProductos4) {
-        this.labelProductos4 = labelProductos4;
-    }
-
-    public JLabel getLabelProductos5() {
-        return labelProductos5;
-    }
-
-    public void setLabelProductos5(JLabel labelProductos5) {
-        this.labelProductos5 = labelProductos5;
-    }
-
-    public JPanel getPnelCrearPedido() {
-        return pnelCrearPedido;
-    }
-
-    public void setPnelCrearPedido(JPanel pnelCrearPedido) {
-        this.pnelCrearPedido = pnelCrearPedido;
-    }
-
-    public JRadioButton getRdBtnMesa1() {
-        return rdBtnMesa1;
-    }
-
-    public void setRdBtnMesa1(JRadioButton rdBtnMesa1) {
-        this.rdBtnMesa1 = rdBtnMesa1;
-    }
-
-    public JRadioButton getRdBtnMesa2() {
-        return rdBtnMesa2;
-    }
-
-    public void setRdBtnMesa2(JRadioButton rdBtnMesa2) {
-        this.rdBtnMesa2 = rdBtnMesa2;
-    }
-
-    public JRadioButton getRdBtnMesa3() {
-        return rdBtnMesa3;
-    }
-
-    public void setRdBtnMesa3(JRadioButton rdBtnMesa3) {
-        this.rdBtnMesa3 = rdBtnMesa3;
-    }
-
-    public JRadioButton getRdBtnMesa4() {
-        return rdBtnMesa4;
-    }
-
-    public void setRdBtnMesa4(JRadioButton rdBtnMesa4) {
-        this.rdBtnMesa4 = rdBtnMesa4;
-    }
-
-    public JLabel getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(JLabel titulo) {
-        this.titulo = titulo;
-    }
-
-    public JLabel getTituloCrearPedido() {
-        return tituloCrearPedido;
-    }
-
-    public void setTituloCrearPedido(JLabel tituloCrearPedido) {
-        this.tituloCrearPedido = tituloCrearPedido;
-    }
-
-    public JButton getBtnCrearPedido() {
-        return btnCrearPedido;
-    }
-
-    public void setBtnCrearPedido(JButton btnCrearPedido) {
-        this.btnCrearPedido = btnCrearPedido;
-    }
-
-    public ButtonGroup getBtnGrupo() {
-        return btnGrupo;
-    }
-
-    public void setBtnGrupo(ButtonGroup btnGrupo) {
-        this.btnGrupo = btnGrupo;
-    }
+   
     
     public int getIdMesaSeleccionada() {
         if (rdBtnMesa1.isSelected()) return 1;
