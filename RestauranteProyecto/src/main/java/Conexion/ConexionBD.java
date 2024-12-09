@@ -17,7 +17,7 @@ public class ConexionBD {
 
     public ConexionBD() {
         try {
-            String url = "jdbc:mysql://localhost:3306/restaurantee"; 
+            String url = "jdbc:mysql://localhost:3306/restaurantec"; 
             String usuario = "root"; 
             String contraseña = ""; 
             conexion = DriverManager.getConnection(url, usuario, contraseña);

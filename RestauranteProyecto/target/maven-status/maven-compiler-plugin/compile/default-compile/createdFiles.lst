@@ -7,6 +7,7 @@ Vista\LoginVista$4.class
 Vista\MeseroVista$11.class
 Vista\MeseroVista$14.class
 Vista\LoginVista$8.class
+Vista\AdminVista$18.class
 Modelo\Mesa.class
 Vista\AdminVista$1.class
 Vista\MeseroVista$3.class
@@ -14,6 +15,7 @@ Vista\AdminVista$15.class
 Vista\LoginVista$1.class
 Vista\AdminVista$8.class
 Vista\AdminVista$12.class
+Vista\AdminVista$19.class
 Vista\MeseroVista$6.class
 Vista\LoginVista$7.class
 Vista\AdminVista$5.class
@@ -23,6 +25,7 @@ Vista\AdminVista$2.class
 Modelo\Producto.class
 Controlador\ControladorChat$ChatApp.class
 Vista\AdminVista$16.class
+Vista\AdminVista$21.class
 Controlador\ControladorChat$ChatApp$1.class
 Vista\MeseroVista$9.class
 Vista\MeseroVista$16.class
@@ -44,8 +47,10 @@ Vista\LoginVista.class
 Vista\MeseroVista$10.class
 Modelo\Pedido.class
 Vista\LoginVista$5.class
+Vista\AdminVista$17.class
 Modelo\UsuarioModelo.class
 Vista\AdminVista$14.class
+Vista\AdminVista$20.class
 Vista\LoginVista$2.class
 Vista\MeseroVista$13.class
 com\mycompany\restauranteproyecto\RestauranteProyecto.class

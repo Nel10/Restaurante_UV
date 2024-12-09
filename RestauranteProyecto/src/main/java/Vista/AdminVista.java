@@ -4,6 +4,12 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
 /**
  *
  * @author holberton
@@ -17,6 +23,254 @@ public class AdminVista extends javax.swing.JFrame {
         initComponents();
     }
 
+    
+    public JButton getBtnBuscarCerrarPedido3() {
+        return btnBuscarCerrarPedido3;
+    }
+
+    public JButton getBtnBuscarNombreMesaEditar() {
+        return btnBuscarNombreMesaEditar;
+    }
+
+    public JButton getBtnBuscarNombreMesaEliminar() {
+        return btnBuscarNombreMesaEliminar;
+    }
+
+    public JButton getBtnBuscarNombreProductoEditar() {
+        return btnBuscarNombreProductoEditar;
+    }
+
+    public JButton getBtnBuscarNombreProductoEliminar() {
+        return btnBuscarNombreProductoEliminar;
+    }
+
+    public JButton getBtnBuscarNombreUsuarioEditar1() {
+        return btnBuscarNombreUsuarioEditar1;
+    }
+
+    public JButton getBtnBuscarUsuarioEliminar() {
+        return btnBuscarUsuarioEliminar;
+    }
+
+    public JButton getBtnCerrarChat() {
+        return btnCerrarChat;
+    }
+
+    public JButton getBtnCrearMesa() {
+        return btnCrearMesa;
+    }
+
+    public JButton getBtnCrearProducto() {
+        return btnCrearProducto;
+    }
+
+    public JButton getBtnCrearUsuario() {
+        return btnCrearUsuario;
+    }
+
+    public JButton getBtnEditarMesa() {
+        return btnEditarMesa;
+    }
+
+    public JButton getBtnEditarProducto() {
+        return btnEditarProducto;
+    }
+
+    public JButton getBtnEditarUsuario() {
+        return btnEditarUsuario;
+    }
+
+    public JButton getBtnEliminarMesa() {
+        return btnEliminarMesa;
+    }
+
+    public JButton getBtnEliminarProducto() {
+        return btnEliminarProducto;
+    }
+
+    public JButton getBtnEliminarUsuario() {
+        return btnEliminarUsuario;
+    }
+
+    public JButton getBtnEnviarChat() {
+        return btnEnviarChat;
+    }
+
+    public JButton getBtnIniciarChat() {
+        return btnIniciarChat;
+    }
+
+    public JButton getBtnListarMesas() {
+        return btnListarMesas;
+    }
+
+    public JButton getBtnListarProductos() {
+        return btnListarProductos;
+    }
+
+    public JButton getBtnListarUsuarios() {
+        return btnListarUsuarios;
+    }
+
+    public JComboBox<String> getCbxCrearCapacidadMesa() {
+        return cbxCrearCapacidadMesa;
+    }
+
+    public JComboBox<String> getCbxCrearEstadoMesa() {
+        return cbxCrearEstadoMesa;
+    }
+
+    public JComboBox<String> getCbxCrearEstadoProducto() {
+        return cbxCrearEstadoProducto;
+    }
+
+    public JComboBox<String> getCbxCrearEstadoUsuario() {
+        return cbxCrearEstadoUsuario;
+    }
+
+    public JComboBox<String> getCbxCrearImagenProducto() {
+        return cbxCrearImagenProducto;
+    }
+
+    public JComboBox<String> getCbxCrearRolUsuario() {
+        return cbxCrearRolUsuario;
+    }
+
+    public JComboBox<String> getCbxCrearUbicacionMesa() {
+        return cbxCrearUbicacionMesa;
+    }
+
+    public JComboBox<String> getCbxMeseroBusqueda() {
+        return cbxMeseroBusqueda;
+    }
+
+    public JComboBox<String> getCbxProductoBusqueda() {
+        return cbxProductoBusqueda;
+    }
+
+    public JComboBox<String> getCbxRangoFecha() {
+        return cbxRangoFecha;
+    }
+
+    public JTextArea getjTextArea1() {
+        return jTextArea1;
+    }
+
+    public JRadioButton getRdBtnMesa13() {
+        return rdBtnMesa13;
+    }
+
+    public JRadioButton getRdBtnMesa14() {
+        return rdBtnMesa14;
+    }
+
+    public JRadioButton getRdBtnMesa15() {
+        return rdBtnMesa15;
+    }
+
+    public JRadioButton getRdBtnMesa16() {
+        return rdBtnMesa16;
+    }
+
+    public JTextField getTxtCrearNombreCompleto() {
+        return txtCrearNombreCompleto;
+    }
+
+    public JTextField getTxtCrearNombreMesa() {
+        return txtCrearNombreMesa;
+    }
+
+    public JTextField getTxtCrearNombreProducto1() {
+        return txtCrearNombreProducto1;
+    }
+
+    public JTextField getTxtCrearPrecioProducto() {
+        return txtCrearPrecioProducto;
+    }
+
+    public JTextField getTxtCrearUsuario() {
+        return txtCrearUsuario;
+    }
+
+    public JTextField getTxtEditarNombreMesa() {
+        return txtEditarNombreMesa;
+    }
+
+    public JTextField getTxtEditarNombreProducto() {
+        return txtEditarNombreProducto;
+    }
+
+    public JTextField getTxtEditarNombreUsuario() {
+        return txtEditarNombreUsuario;
+    }
+
+    public JTextField getTxtEliminarNombreMesa() {
+        return txtEliminarNombreMesa;
+    }
+
+    public JTextField getTxtEliminarNombreProducto() {
+        return txtEliminarNombreProducto;
+    }
+
+    public JTextField getTxtEliminarUsuario() {
+        return txtEliminarUsuario;
+    }
+
+    public JTextArea getTxtaBusquedaFiltrada() {
+        return txtaBusquedaFiltrada;
+    }
+
+    public JTextArea getTxtaDetallePedidoCerrar2() {
+        return txtaDetallePedidoCerrar2;
+    }
+
+    public JTextArea getTxtaListaMesas() {
+        return txtaListaMesas;
+    }
+
+    public JTextArea getTxtaListaProductos() {
+        return txtaListaProductos;
+    }
+
+    public JTextArea getTxtaListaUsuarios() {
+        return txtaListaUsuarios;
+    }
+
+    public JTextArea getTxtaProductosVendidos() {
+        return txtaProductosVendidos;
+    }
+
+    public JTextArea getTxtaProductosVendidos1() {
+        return txtaProductosVendidos1;
+    }
+
+    public JTextArea getTxtaResultadoEditarMesa() {
+        return txtaResultadoEditarMesa;
+    }
+
+    public JTextArea getTxtaResultadoEditarProducto() {
+        return txtaResultadoEditarProducto;
+    }
+
+    public JTextArea getTxtaResultadoEditarUsuario() {
+        return txtaResultadoEditarUsuario;
+    }
+
+    public JTextArea getTxtaResultadoEliminarMesa() {
+        return txtaResultadoEliminarMesa;
+    }
+
+    public JTextArea getTxtaResultadoEliminarProducto() {
+        return txtaResultadoEliminarProducto;
+    }
+
+    public JTextArea getTxtaResultadoEliminarUsuario() {
+        return txtaResultadoEliminarUsuario;
+    }
+
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -191,11 +445,6 @@ public class AdminVista extends javax.swing.JFrame {
         pnelResumenVentas.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
         cbxRangoFecha.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hoy", "Semana", "Mes", "Año" }));
-        cbxRangoFecha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxRangoFechaActionPerformed(evt);
-            }
-        });
         pnelResumenVentas.add(cbxRangoFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
 
         txtaProductosVendidos.setColumns(20);
@@ -270,22 +519,12 @@ public class AdminVista extends javax.swing.JFrame {
         btnListarUsuarios.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnListarUsuarios.setForeground(new java.awt.Color(255, 255, 255));
         btnListarUsuarios.setText("Usuarios");
-        btnListarUsuarios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListarUsuariosActionPerformed(evt);
-            }
-        });
         pnelGestionUsuarios.add(btnListarUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 110, 40));
 
         btnCrearUsuario.setBackground(new java.awt.Color(255, 102, 0));
         btnCrearUsuario.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnCrearUsuario.setForeground(new java.awt.Color(255, 255, 255));
         btnCrearUsuario.setText("Crear");
-        btnCrearUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearUsuarioActionPerformed(evt);
-            }
-        });
         pnelGestionUsuarios.add(btnCrearUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 110, 40));
 
         jLabel15.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
@@ -296,11 +535,6 @@ public class AdminVista extends javax.swing.JFrame {
         btnEditarUsuario.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnEditarUsuario.setForeground(new java.awt.Color(255, 255, 255));
         btnEditarUsuario.setText("Editar");
-        btnEditarUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditarUsuarioActionPerformed(evt);
-            }
-        });
         pnelGestionUsuarios.add(btnEditarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 110, 40));
 
         jLabel33.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
@@ -311,11 +545,6 @@ public class AdminVista extends javax.swing.JFrame {
         btnEliminarUsuario.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnEliminarUsuario.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarUsuario.setText("Eliminar");
-        btnEliminarUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarUsuarioActionPerformed(evt);
-            }
-        });
         pnelGestionUsuarios.add(btnEliminarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 110, 40));
 
         jLabel34.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
@@ -392,44 +621,24 @@ public class AdminVista extends javax.swing.JFrame {
         btnCrearMesa.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnCrearMesa.setForeground(new java.awt.Color(255, 255, 255));
         btnCrearMesa.setText("Crear");
-        btnCrearMesa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearMesaActionPerformed(evt);
-            }
-        });
         pnelGestionMesas.add(btnCrearMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 40));
 
         btnEditarMesa.setBackground(new java.awt.Color(255, 102, 0));
         btnEditarMesa.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnEditarMesa.setForeground(new java.awt.Color(255, 255, 255));
         btnEditarMesa.setText("Editar");
-        btnEditarMesa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditarMesaActionPerformed(evt);
-            }
-        });
         pnelGestionMesas.add(btnEditarMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 110, 40));
 
         btnEliminarMesa.setBackground(new java.awt.Color(255, 0, 0));
         btnEliminarMesa.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnEliminarMesa.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarMesa.setText("Eliminar");
-        btnEliminarMesa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarMesaActionPerformed(evt);
-            }
-        });
         pnelGestionMesas.add(btnEliminarMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 110, 40));
 
         btnListarMesas.setBackground(new java.awt.Color(255, 102, 0));
         btnListarMesas.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnListarMesas.setForeground(new java.awt.Color(255, 255, 255));
         btnListarMesas.setText("Mesas");
-        btnListarMesas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListarMesasActionPerformed(evt);
-            }
-        });
         pnelGestionMesas.add(btnListarMesas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 110, 40));
 
         jLabel20.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
@@ -515,44 +724,24 @@ public class AdminVista extends javax.swing.JFrame {
         btnCrearProducto.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnCrearProducto.setForeground(new java.awt.Color(255, 255, 255));
         btnCrearProducto.setText("Crear");
-        btnCrearProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearProductoActionPerformed(evt);
-            }
-        });
         pnelGestionProductos.add(btnCrearProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 40));
 
         btnEditarProducto.setBackground(new java.awt.Color(255, 102, 0));
         btnEditarProducto.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnEditarProducto.setForeground(new java.awt.Color(255, 255, 255));
         btnEditarProducto.setText("Editar");
-        btnEditarProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditarProductoActionPerformed(evt);
-            }
-        });
         pnelGestionProductos.add(btnEditarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 110, 40));
 
         btnEliminarProducto.setBackground(new java.awt.Color(255, 0, 0));
         btnEliminarProducto.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnEliminarProducto.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarProducto.setText("Eliminar");
-        btnEliminarProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarProductoActionPerformed(evt);
-            }
-        });
         pnelGestionProductos.add(btnEliminarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 110, 40));
 
         btnListarProductos.setBackground(new java.awt.Color(255, 102, 0));
         btnListarProductos.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
         btnListarProductos.setForeground(new java.awt.Color(255, 255, 255));
         btnListarProductos.setText("Productos");
-        btnListarProductos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListarProductosActionPerformed(evt);
-            }
-        });
         pnelGestionProductos.add(btnListarProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 110, 40));
 
         jLabel43.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
@@ -669,11 +858,6 @@ public class AdminVista extends javax.swing.JFrame {
         pnelPedidosenCurso.add(rdBtnMesa13, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
 
         rdBtnMesa14.setText("Mesa #1");
-        rdBtnMesa14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnMesa14ActionPerformed(evt);
-            }
-        });
         pnelPedidosenCurso.add(rdBtnMesa14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
 
         rdBtnMesa15.setText("Mesa #2");
@@ -696,11 +880,6 @@ public class AdminVista extends javax.swing.JFrame {
         btnBuscarCerrarPedido3.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         btnBuscarCerrarPedido3.setForeground(new java.awt.Color(255, 255, 255));
         btnBuscarCerrarPedido3.setText("Buscar");
-        btnBuscarCerrarPedido3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarCerrarPedido3ActionPerformed(evt);
-            }
-        });
         pnelPedidosenCurso.add(btnBuscarCerrarPedido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
 
         jTabbedPane1.addTab("Pedidos en curso", pnelPedidosenCurso);
@@ -722,33 +901,18 @@ public class AdminVista extends javax.swing.JFrame {
         btnEnviarChat.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         btnEnviarChat.setForeground(new java.awt.Color(255, 255, 255));
         btnEnviarChat.setText("Enviar");
-        btnEnviarChat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnviarChatActionPerformed(evt);
-            }
-        });
         pnelChat.add(btnEnviarChat, new org.netbeans.lib.awtextra.AbsoluteConstraints(536, 510, 190, -1));
 
         btnIniciarChat.setBackground(new java.awt.Color(255, 102, 0));
         btnIniciarChat.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         btnIniciarChat.setForeground(new java.awt.Color(255, 255, 255));
         btnIniciarChat.setText("Iniciar chat");
-        btnIniciarChat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIniciarChatActionPerformed(evt);
-            }
-        });
         pnelChat.add(btnIniciarChat, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 170, -1));
 
         btnCerrarChat.setBackground(new java.awt.Color(255, 0, 0));
         btnCerrarChat.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         btnCerrarChat.setForeground(new java.awt.Color(255, 255, 255));
         btnCerrarChat.setText("Cerrar chat");
-        btnCerrarChat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCerrarChatActionPerformed(evt);
-            }
-        });
         pnelChat.add(btnCerrarChat, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 578, 160, 40));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/chat.png"))); // NOI18N
@@ -773,81 +937,9 @@ public class AdminVista extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCerrarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarChatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCerrarChatActionPerformed
-
-    private void btnIniciarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarChatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnIniciarChatActionPerformed
-
-    private void btnEnviarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarChatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEnviarChatActionPerformed
-
-    private void rdBtnMesa14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnMesa14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rdBtnMesa14ActionPerformed
-
-    private void btnBuscarCerrarPedido3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCerrarPedido3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarCerrarPedido3ActionPerformed
-
-    private void cbxRangoFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxRangoFechaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbxRangoFechaActionPerformed
-
-    private void btnListarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarUsuariosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarUsuariosActionPerformed
-
-    private void btnCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCrearUsuarioActionPerformed
-
-    private void btnEditarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEditarUsuarioActionPerformed
-
-    private void btnEliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarUsuarioActionPerformed
-
     private void txtCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCrearUsuarioActionPerformed
-
-    private void btnCrearMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearMesaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCrearMesaActionPerformed
-
-    private void btnEditarMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarMesaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEditarMesaActionPerformed
-
-    private void btnEliminarMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarMesaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarMesaActionPerformed
-
-    private void btnListarMesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarMesasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarMesasActionPerformed
-
-    private void btnCrearProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearProductoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCrearProductoActionPerformed
-
-    private void btnEditarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProductoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEditarProductoActionPerformed
-
-    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarProductoActionPerformed
-
-    private void btnListarProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarProductosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarProductosActionPerformed
 
     private void txtCrearPrecioProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearPrecioProductoActionPerformed
         // TODO add your handling code here:

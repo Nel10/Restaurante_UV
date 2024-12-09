@@ -131,9 +131,6 @@
                       </StringArray>
                     </Property>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxRangoFechaActionPerformed"/>
-                  </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
@@ -410,9 +407,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Usuarios"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnListarUsuariosActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="40" y="90" width="110" height="40"/>
@@ -432,9 +426,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Crear"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCrearUsuarioActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="40" y="230" width="110" height="40"/>
@@ -467,9 +458,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Editar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarUsuarioActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="40" y="370" width="110" height="40"/>
@@ -502,9 +490,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Eliminar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarUsuarioActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="40" y="520" width="110" height="40"/>
@@ -778,9 +763,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Crear"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCrearMesaActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="250" width="110" height="40"/>
@@ -800,9 +782,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Editar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarMesaActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="380" width="110" height="40"/>
@@ -822,9 +801,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Eliminar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarMesaActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="520" width="110" height="40"/>
@@ -844,9 +820,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Mesas"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnListarMesasActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="120" width="110" height="40"/>
@@ -1170,9 +1143,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Crear"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCrearProductoActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="250" width="110" height="40"/>
@@ -1192,9 +1162,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Editar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarProductoActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="380" width="110" height="40"/>
@@ -1214,9 +1181,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Eliminar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarProductoActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="520" width="110" height="40"/>
@@ -1236,9 +1200,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Productos"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnListarProductosActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="120" width="110" height="40"/>
@@ -1623,9 +1584,6 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Mesa #1"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdBtnMesa14ActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="120" y="190" width="-1" height="-1"/>
@@ -1698,9 +1656,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Buscar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarCerrarPedido3ActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="330" y="240" width="-1" height="-1"/>
@@ -1773,9 +1728,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Enviar"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEnviarChatActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="536" y="510" width="190" height="-1"/>
@@ -1795,9 +1747,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Iniciar chat"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIniciarChatActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="40" y="150" width="170" height="-1"/>
@@ -1817,9 +1766,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Cerrar chat"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCerrarChatActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="297" y="578" width="160" height="40"/>
