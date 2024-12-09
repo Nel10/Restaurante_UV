@@ -29,39 +29,133 @@ public class AdminVista extends javax.swing.JFrame {
         Background = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        pnelCrearPedido = new javax.swing.JPanel();
-        tituloCrearPedido = new javax.swing.JLabel();
-        labelMesas = new javax.swing.JLabel();
-        labelProductos = new javax.swing.JLabel();
+        pnelResumenVentas = new javax.swing.JPanel();
+        tituloResumenVentas = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        cbxRangoFecha = new javax.swing.JComboBox<>();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        txtaProductosVendidos = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        rdBtnMesa4 = new javax.swing.JRadioButton();
-        rdBtnMesa1 = new javax.swing.JRadioButton();
-        rdBtnMesa2 = new javax.swing.JRadioButton();
-        rdBtnMesa3 = new javax.swing.JRadioButton();
-        cbxEntradas = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        txtaProductosVendidos1 = new javax.swing.JTextArea();
+        jSeparator1 = new javax.swing.JSeparator();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        txtaBusquedaFiltrada = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        cbxMeseroBusqueda = new javax.swing.JComboBox<>();
+        cbxProductoBusqueda = new javax.swing.JComboBox<>();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        pnelGestionUsuarios = new javax.swing.JPanel();
+        tituloGestionUsuarios = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        labelProductos1 = new javax.swing.JLabel();
-        labelProductos2 = new javax.swing.JLabel();
-        labelProductos3 = new javax.swing.JLabel();
-        labelProductos4 = new javax.swing.JLabel();
-        labelProductos5 = new javax.swing.JLabel();
-        cbxFritos = new javax.swing.JComboBox<>();
-        cbxBebidas = new javax.swing.JComboBox<>();
-        cbxEspeciales = new javax.swing.JComboBox<>();
-        cbxSancocho = new javax.swing.JComboBox<>();
-        cantBebidas = new javax.swing.JSpinner();
-        cantEntradas = new javax.swing.JSpinner();
-        cantSancocho = new javax.swing.JSpinner();
-        cantEspeciales = new javax.swing.JSpinner();
-        cantFritos = new javax.swing.JSpinner();
-        btnCrearPedido = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtaResultadoEliminarUsuario = new javax.swing.JTextArea();
+        btnListarUsuarios = new javax.swing.JButton();
+        btnCrearUsuario = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        btnEditarUsuario = new javax.swing.JButton();
+        jLabel33 = new javax.swing.JLabel();
+        btnEliminarUsuario = new javax.swing.JButton();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        txtCrearUsuario = new javax.swing.JTextField();
+        txtEditarNombreUsuario = new javax.swing.JTextField();
+        cbxCrearRolUsuario = new javax.swing.JComboBox<>();
+        cbxCrearEstadoUsuario = new javax.swing.JComboBox<>();
+        jLabel35 = new javax.swing.JLabel();
+        txtCrearNombreCompleto = new javax.swing.JTextField();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        txtaListaUsuarios = new javax.swing.JTextArea();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        txtaResultadoEditarUsuario = new javax.swing.JTextArea();
+        txtEliminarUsuario = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        btnBuscarUsuarioEliminar = new javax.swing.JButton();
+        btnBuscarNombreUsuarioEditar1 = new javax.swing.JButton();
+        pnelGestionMesas = new javax.swing.JPanel();
+        tituloCrearPedido2 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        btnCrearMesa = new javax.swing.JButton();
+        btnEditarMesa = new javax.swing.JButton();
+        btnEliminarMesa = new javax.swing.JButton();
+        btnListarMesas = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        txtaListaMesas = new javax.swing.JTextArea();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        txtCrearNombreMesa = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        cbxCrearEstadoMesa = new javax.swing.JComboBox<>();
+        cbxCrearUbicacionMesa = new javax.swing.JComboBox<>();
+        jLabel38 = new javax.swing.JLabel();
+        cbxCrearCapacidadMesa = new javax.swing.JComboBox<>();
+        jLabel39 = new javax.swing.JLabel();
+        txtEditarNombreMesa = new javax.swing.JTextField();
+        btnBuscarNombreMesaEditar = new javax.swing.JButton();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        txtaResultadoEditarMesa = new javax.swing.JTextArea();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        txtEliminarNombreMesa = new javax.swing.JTextField();
+        btnBuscarNombreMesaEliminar = new javax.swing.JButton();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        txtaResultadoEliminarMesa = new javax.swing.JTextArea();
+        pnelGestionProductos = new javax.swing.JPanel();
+        tituloCrearPedido3 = new javax.swing.JLabel();
+        btnCrearProducto = new javax.swing.JButton();
+        btnEditarProducto = new javax.swing.JButton();
+        btnEliminarProducto = new javax.swing.JButton();
+        btnListarProductos = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        txtaListaProductos = new javax.swing.JTextArea();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        txtCrearPrecioProducto = new javax.swing.JTextField();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        cbxCrearEstadoProducto = new javax.swing.JComboBox<>();
+        cbxCrearImagenProducto = new javax.swing.JComboBox<>();
+        jLabel48 = new javax.swing.JLabel();
+        txtEditarNombreProducto = new javax.swing.JTextField();
+        btnBuscarNombreProductoEditar = new javax.swing.JButton();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        txtaResultadoEditarProducto = new javax.swing.JTextArea();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        txtEliminarNombreProducto = new javax.swing.JTextField();
+        btnBuscarNombreProductoEliminar = new javax.swing.JButton();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        txtaResultadoEliminarProducto = new javax.swing.JTextArea();
+        jLabel52 = new javax.swing.JLabel();
+        txtCrearNombreProducto1 = new javax.swing.JTextField();
+        pnelPedidosenCurso = new javax.swing.JPanel();
+        tituloCrearPedido4 = new javax.swing.JLabel();
+        labelMesas4 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        rdBtnMesa13 = new javax.swing.JRadioButton();
+        rdBtnMesa14 = new javax.swing.JRadioButton();
+        rdBtnMesa15 = new javax.swing.JRadioButton();
+        rdBtnMesa16 = new javax.swing.JRadioButton();
+        jLabel31 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        txtaDetallePedidoCerrar2 = new javax.swing.JTextArea();
+        btnBuscarCerrarPedido3 = new javax.swing.JButton();
         pnelChat = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -70,38 +164,6 @@ public class AdminVista extends javax.swing.JFrame {
         btnIniciarChat = new javax.swing.JButton();
         btnCerrarChat = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
-        pnelModificarPedido = new javax.swing.JPanel();
-        tituloCrearPedido1 = new javax.swing.JLabel();
-        labelMesas1 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        rdBtnModificarMesa4 = new javax.swing.JRadioButton();
-        rdBtnModificarMesa1 = new javax.swing.JRadioButton();
-        rdBtnModificarMesa2 = new javax.swing.JRadioButton();
-        rdBtnModificarMesa3 = new javax.swing.JRadioButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtaDetallePedidoMesa = new javax.swing.JTextArea();
-        btnBuscarModificarPedido = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        btnModificarPedido = new javax.swing.JButton();
-        pnelCerrarPedido = new javax.swing.JPanel();
-        tituloCrearPedido2 = new javax.swing.JLabel();
-        labelMesas2 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        rdBtnMesa5 = new javax.swing.JRadioButton();
-        rdBtnMesa6 = new javax.swing.JRadioButton();
-        rdBtnMesa7 = new javax.swing.JRadioButton();
-        rdBtnMesa8 = new javax.swing.JRadioButton();
-        btnCerrarPedido = new javax.swing.JButton();
-        jLabel20 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        txtaDetallePedidoCerrar = new javax.swing.JTextArea();
-        btnBuscarCerrarPedido1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -117,173 +179,531 @@ public class AdminVista extends javax.swing.JFrame {
         jTabbedPane1.setBackground(new java.awt.Color(255, 153, 102));
         jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
 
-        pnelCrearPedido.setBackground(new java.awt.Color(255, 255, 255));
-        pnelCrearPedido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        pnelResumenVentas.setBackground(new java.awt.Color(255, 255, 255));
+        pnelResumenVentas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tituloCrearPedido.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
-        tituloCrearPedido.setText("Crear Pedido");
-        pnelCrearPedido.add(tituloCrearPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, -1, 38));
+        tituloResumenVentas.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        tituloResumenVentas.setText("Resumen de Ventas");
+        pnelResumenVentas.add(tituloResumenVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, -1, 38));
 
-        labelMesas.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
-        labelMesas.setText("Mesas: ");
-        pnelCrearPedido.add(labelMesas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+        jLabel32.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel32.setText("Fecha:");
+        pnelResumenVentas.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
-        labelProductos.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        labelProductos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelProductos.setText("Especiales");
-        pnelCrearPedido.add(labelProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 470, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel2.setText("jLabel1");
-        pnelCrearPedido.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, 120));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel7.setText("jLabel1");
-        pnelCrearPedido.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 120, 120));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel8.setText("jLabel1");
-        pnelCrearPedido.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 120, 120));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel9.setText("jLabel1");
-        pnelCrearPedido.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 120, 120));
-
-        rdBtnMesa4.setText("Mesa #4");
-        pnelCrearPedido.add(rdBtnMesa4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
-
-        rdBtnMesa1.setText("Mesa #1");
-        rdBtnMesa1.addActionListener(new java.awt.event.ActionListener() {
+        cbxRangoFecha.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hoy", "Semana", "Mes", "Año" }));
+        cbxRangoFecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnMesa1ActionPerformed(evt);
+                cbxRangoFechaActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(rdBtnMesa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
+        pnelResumenVentas.add(cbxRangoFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
 
-        rdBtnMesa2.setText("Mesa #2");
-        pnelCrearPedido.add(rdBtnMesa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, -1, -1));
+        txtaProductosVendidos.setColumns(20);
+        txtaProductosVendidos.setRows(5);
+        jScrollPane6.setViewportView(txtaProductosVendidos);
 
-        rdBtnMesa3.setText("Mesa #3");
-        pnelCrearPedido.add(rdBtnMesa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
+        pnelResumenVentas.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, 320, 40));
 
-        cbxEntradas.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        cbxEntradas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tostadas $8.000", "Porción papas $8.000" }));
-        cbxEntradas.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel2.setText("Total de Ventas:");
+        pnelResumenVentas.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel3.setText("Productos vendidos:");
+        pnelResumenVentas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+
+        txtaProductosVendidos1.setColumns(20);
+        txtaProductosVendidos1.setRows(5);
+        jScrollPane7.setViewportView(txtaProductosVendidos1);
+
+        pnelResumenVentas.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 290, 170));
+        pnelResumenVentas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 340, -1));
+
+        txtaBusquedaFiltrada.setColumns(20);
+        txtaBusquedaFiltrada.setRows(5);
+        jScrollPane8.setViewportView(txtaBusquedaFiltrada);
+
+        pnelResumenVentas.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 670, 130));
+
+        jLabel4.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
+        jLabel4.setText("Busqueda filtrada");
+        pnelResumenVentas.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, -1, -1));
+
+        jLabel5.setText("Mesero:");
+        pnelResumenVentas.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, -1, -1));
+
+        jLabel6.setText("Producto:");
+        pnelResumenVentas.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, -1, -1));
+
+        cbxMeseroBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Stephany", "Gean", "Alexis", " ", " " }));
+        pnelResumenVentas.add(cbxMeseroBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 150, -1));
+
+        cbxProductoBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Entradas", "Especiales", "Fritos", "Bebidas", "Sancochos" }));
+        pnelResumenVentas.add(cbxProductoBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 130, -1));
+
+        jLabel7.setText("jLabel7");
+        pnelResumenVentas.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 100, 60));
+
+        jLabel8.setText("jLabel7");
+        pnelResumenVentas.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 360, 100, 60));
+
+        jTabbedPane1.addTab("Resumen de Ventas", pnelResumenVentas);
+
+        pnelGestionUsuarios.setBackground(new java.awt.Color(255, 255, 255));
+        pnelGestionUsuarios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        tituloGestionUsuarios.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        tituloGestionUsuarios.setText("Gestión de Usuarios");
+        pnelGestionUsuarios.add(tituloGestionUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, -1, 38));
+
+        jLabel10.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel10.setText("Lista de Usuarios:");
+        pnelGestionUsuarios.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, -1, -1));
+
+        txtaResultadoEliminarUsuario.setColumns(20);
+        txtaResultadoEliminarUsuario.setRows(5);
+        jScrollPane2.setViewportView(txtaResultadoEliminarUsuario);
+
+        pnelGestionUsuarios.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 570, 530, 50));
+
+        btnListarUsuarios.setBackground(new java.awt.Color(255, 102, 0));
+        btnListarUsuarios.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnListarUsuarios.setForeground(new java.awt.Color(255, 255, 255));
+        btnListarUsuarios.setText("Usuarios");
+        btnListarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxEntradasActionPerformed(evt);
+                btnListarUsuariosActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(cbxEntradas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 160, -1));
+        pnelGestionUsuarios.add(btnListarUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 110, 40));
 
-        jLabel3.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Tilapia Frita.png"))); // NOI18N
-        pnelCrearPedido.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 100, 140));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Seviche.png"))); // NOI18N
-        pnelCrearPedido.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 500, 100, 100));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sancocho.png"))); // NOI18N
-        pnelCrearPedido.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 100, 100));
-
-        jLabel6.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Screenshot from 2024-12-08 03-40-19.png"))); // NOI18N
-        pnelCrearPedido.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 290, 100, 130));
-
-        jLabel10.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Tilapia Frita.png"))); // NOI18N
-        pnelCrearPedido.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 100, 140));
-
-        labelProductos1.setBackground(new java.awt.Color(255, 255, 255));
-        labelProductos1.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
-        labelProductos1.setText("Productos:");
-        pnelCrearPedido.add(labelProductos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
-
-        labelProductos2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        labelProductos2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelProductos2.setText("Fritos");
-        pnelCrearPedido.add(labelProductos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, -1, -1));
-
-        labelProductos3.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        labelProductos3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelProductos3.setText("Entradas");
-        pnelCrearPedido.add(labelProductos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
-
-        labelProductos4.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        labelProductos4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelProductos4.setText("Sancochos");
-        pnelCrearPedido.add(labelProductos4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
-
-        labelProductos5.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        labelProductos5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelProductos5.setText("Bebidas");
-        pnelCrearPedido.add(labelProductos5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, -1, -1));
-
-        cbxFritos.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        cbxFritos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tilapia $35.000", "Tilapia $20.000" }));
-        cbxFritos.addActionListener(new java.awt.event.ActionListener() {
+        btnCrearUsuario.setBackground(new java.awt.Color(255, 102, 0));
+        btnCrearUsuario.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnCrearUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        btnCrearUsuario.setText("Crear");
+        btnCrearUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxFritosActionPerformed(evt);
+                btnCrearUsuarioActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(cbxFritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, -1));
+        pnelGestionUsuarios.add(btnCrearUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 110, 40));
 
-        cbxBebidas.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        cbxBebidas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Limonada Natu $8.000", "Limonada Cere $10.000", "Limonada Coco $10.000" }));
-        cbxBebidas.addActionListener(new java.awt.event.ActionListener() {
+        jLabel15.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel15.setText("Crear Usuario:");
+        pnelGestionUsuarios.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, -1, -1));
+
+        btnEditarUsuario.setBackground(new java.awt.Color(255, 102, 0));
+        btnEditarUsuario.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnEditarUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditarUsuario.setText("Editar");
+        btnEditarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxBebidasActionPerformed(evt);
+                btnEditarUsuarioActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(cbxBebidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, -1, -1));
+        pnelGestionUsuarios.add(btnEditarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 110, 40));
 
-        cbxEspeciales.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        cbxEspeciales.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Caz. camarón $35.000", "Caz. mariscos $35.000", " " }));
-        cbxEspeciales.addActionListener(new java.awt.event.ActionListener() {
+        jLabel33.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel33.setText("Editar Usuario:");
+        pnelGestionUsuarios.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, -1, -1));
+
+        btnEliminarUsuario.setBackground(new java.awt.Color(255, 0, 0));
+        btnEliminarUsuario.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnEliminarUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminarUsuario.setText("Eliminar");
+        btnEliminarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxEspecialesActionPerformed(evt);
+                btnEliminarUsuarioActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(cbxEspeciales, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 610, -1, -1));
+        pnelGestionUsuarios.add(btnEliminarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 110, 40));
 
-        cbxSancocho.setFont(new java.awt.Font("Liberation Sans", 0, 14)); // NOI18N
-        cbxSancocho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pequeño $4.000", "Mediano $6.000", "Grande $8.000", " " }));
-        cbxSancocho.addActionListener(new java.awt.event.ActionListener() {
+        jLabel34.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel34.setText("Eliminar Usuario:");
+        pnelGestionUsuarios.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, -1, -1));
+
+        jLabel9.setText("Usuario:");
+        pnelGestionUsuarios.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
+        pnelGestionUsuarios.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, -1, -1));
+
+        jLabel12.setText("Nombre completo:");
+        pnelGestionUsuarios.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 380, -1, -1));
+
+        jLabel13.setText("Rol:");
+        pnelGestionUsuarios.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, -1, -1));
+
+        jLabel14.setText("Estado:");
+        pnelGestionUsuarios.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 240, -1, -1));
+
+        txtCrearUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxSancochoActionPerformed(evt);
+                txtCrearUsuarioActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(cbxSancocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, -1, -1));
+        pnelGestionUsuarios.add(txtCrearUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 270, 200, -1));
+        pnelGestionUsuarios.add(txtEditarNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 200, -1));
 
-        cantBebidas.setFocusCycleRoot(true);
-        pnelCrearPedido.add(cantBebidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 440, -1, -1));
+        cbxCrearRolUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Mesero" }));
+        pnelGestionUsuarios.add(cbxCrearRolUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, -1, -1));
 
-        cantEntradas.setFocusCycleRoot(true);
-        pnelCrearPedido.add(cantEntradas, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, -1, -1));
+        cbxCrearEstadoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activo", "Inactivo", " " }));
+        pnelGestionUsuarios.add(cbxCrearEstadoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 240, -1, -1));
 
-        cantSancocho.setFocusCycleRoot(true);
-        pnelCrearPedido.add(cantSancocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 610, -1, -1));
+        jLabel35.setText("Nombre completo:");
+        pnelGestionUsuarios.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, -1, -1));
+        pnelGestionUsuarios.add(txtCrearNombreCompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 200, -1));
 
-        cantEspeciales.setFocusCycleRoot(true);
-        pnelCrearPedido.add(cantEspeciales, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 610, -1, -1));
+        txtaListaUsuarios.setColumns(20);
+        txtaListaUsuarios.setRows(5);
+        jScrollPane9.setViewportView(txtaListaUsuarios);
 
-        cantFritos.setFocusCycleRoot(true);
-        pnelCrearPedido.add(cantFritos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, -1, -1));
+        pnelGestionUsuarios.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 530, 100));
 
-        btnCrearPedido.setBackground(new java.awt.Color(255, 102, 0));
-        btnCrearPedido.setFont(new java.awt.Font("Liberation Sans", 1, 26)); // NOI18N
-        btnCrearPedido.setForeground(new java.awt.Color(255, 255, 255));
-        btnCrearPedido.setText("Crear ! ");
-        btnCrearPedido.setBorder(null);
-        btnCrearPedido.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnCrearPedido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnCrearPedido.addActionListener(new java.awt.event.ActionListener() {
+        txtaResultadoEditarUsuario.setColumns(20);
+        txtaResultadoEditarUsuario.setRows(5);
+        jScrollPane10.setViewportView(txtaResultadoEditarUsuario);
+
+        pnelGestionUsuarios.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 530, 50));
+        pnelGestionUsuarios.add(txtEliminarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, 200, -1));
+
+        jLabel36.setText("Usuario:");
+        pnelGestionUsuarios.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 530, -1, -1));
+
+        btnBuscarUsuarioEliminar.setText("...");
+        pnelGestionUsuarios.add(btnBuscarUsuarioEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 530, -1, -1));
+
+        btnBuscarNombreUsuarioEditar1.setText("...");
+        pnelGestionUsuarios.add(btnBuscarNombreUsuarioEditar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, -1, -1));
+
+        jTabbedPane1.addTab("Gestión de Usuarios", pnelGestionUsuarios);
+
+        pnelGestionMesas.setBackground(new java.awt.Color(255, 255, 255));
+        pnelGestionMesas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        tituloCrearPedido2.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        tituloCrearPedido2.setText("Gestión de Mesas");
+        pnelGestionMesas.add(tituloCrearPedido2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, -1, 38));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
+        jLabel16.setText("jLabel1");
+        pnelGestionMesas.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 0, 120, 120));
+
+        btnCrearMesa.setBackground(new java.awt.Color(255, 102, 0));
+        btnCrearMesa.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnCrearMesa.setForeground(new java.awt.Color(255, 255, 255));
+        btnCrearMesa.setText("Crear");
+        btnCrearMesa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearPedidoActionPerformed(evt);
+                btnCrearMesaActionPerformed(evt);
             }
         });
-        pnelCrearPedido.add(btnCrearPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 540, 130, 70));
+        pnelGestionMesas.add(btnCrearMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 40));
 
-        jTabbedPane1.addTab("Crear Pedido", pnelCrearPedido);
+        btnEditarMesa.setBackground(new java.awt.Color(255, 102, 0));
+        btnEditarMesa.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnEditarMesa.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditarMesa.setText("Editar");
+        btnEditarMesa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarMesaActionPerformed(evt);
+            }
+        });
+        pnelGestionMesas.add(btnEditarMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 110, 40));
+
+        btnEliminarMesa.setBackground(new java.awt.Color(255, 0, 0));
+        btnEliminarMesa.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnEliminarMesa.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminarMesa.setText("Eliminar");
+        btnEliminarMesa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarMesaActionPerformed(evt);
+            }
+        });
+        pnelGestionMesas.add(btnEliminarMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 110, 40));
+
+        btnListarMesas.setBackground(new java.awt.Color(255, 102, 0));
+        btnListarMesas.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnListarMesas.setForeground(new java.awt.Color(255, 255, 255));
+        btnListarMesas.setText("Mesas");
+        btnListarMesas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListarMesasActionPerformed(evt);
+            }
+        });
+        pnelGestionMesas.add(btnListarMesas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 110, 40));
+
+        jLabel20.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel20.setText("Editar Mesa:");
+        pnelGestionMesas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, -1, -1));
+
+        txtaListaMesas.setColumns(20);
+        txtaListaMesas.setRows(5);
+        jScrollPane11.setViewportView(txtaListaMesas);
+
+        pnelGestionMesas.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 530, 100));
+
+        jLabel37.setText("Nombre Mesa:");
+        pnelGestionMesas.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, -1, -1));
+
+        jLabel17.setText("Capacidad:");
+        pnelGestionMesas.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+        pnelGestionMesas.add(txtCrearNombreMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 200, 20));
+
+        jLabel18.setText("Estado:");
+        pnelGestionMesas.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, -1, -1));
+
+        jLabel19.setText("Ubicación:");
+        pnelGestionMesas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, -1, -1));
+
+        cbxCrearEstadoMesa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Disponible", "Ocupada", " " }));
+        pnelGestionMesas.add(cbxCrearEstadoMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, -1, 20));
+
+        cbxCrearUbicacionMesa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Salón Principal", "Salón Medio", "Salón Pequeño" }));
+        pnelGestionMesas.add(cbxCrearUbicacionMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 150, 20));
+
+        jLabel38.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel38.setText("Descripción de Mesas:");
+        pnelGestionMesas.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
+
+        cbxCrearCapacidadMesa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2", "4", "6", "10" }));
+        pnelGestionMesas.add(cbxCrearCapacidadMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 50, 20));
+
+        jLabel39.setText("Nombre Mesa:");
+        pnelGestionMesas.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, -1, -1));
+        pnelGestionMesas.add(txtEditarNombreMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, 200, 20));
+
+        btnBuscarNombreMesaEditar.setText("...");
+        pnelGestionMesas.add(btnBuscarNombreMesaEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 400, -1, -1));
+
+        txtaResultadoEditarMesa.setColumns(20);
+        txtaResultadoEditarMesa.setRows(5);
+        jScrollPane12.setViewportView(txtaResultadoEditarMesa);
+
+        pnelGestionMesas.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 430, 530, 50));
+
+        jLabel40.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel40.setText("Crear Mesa:");
+        pnelGestionMesas.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, -1, -1));
+
+        jLabel41.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel41.setText("Eliminar Mesa:");
+        pnelGestionMesas.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 490, -1, -1));
+
+        jLabel42.setText("Nombre Mesa:");
+        pnelGestionMesas.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, -1, -1));
+        pnelGestionMesas.add(txtEliminarNombreMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 520, 200, 20));
+
+        btnBuscarNombreMesaEliminar.setText("...");
+        pnelGestionMesas.add(btnBuscarNombreMesaEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
+
+        txtaResultadoEliminarMesa.setColumns(20);
+        txtaResultadoEliminarMesa.setRows(5);
+        jScrollPane13.setViewportView(txtaResultadoEliminarMesa);
+
+        pnelGestionMesas.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 530, 50));
+
+        jTabbedPane1.addTab("Gestión de Mesas", pnelGestionMesas);
+
+        pnelGestionProductos.setBackground(new java.awt.Color(255, 255, 255));
+        pnelGestionProductos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        tituloCrearPedido3.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        tituloCrearPedido3.setText("Gestión de Productos");
+        pnelGestionProductos.add(tituloCrearPedido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, -1, 38));
+
+        btnCrearProducto.setBackground(new java.awt.Color(255, 102, 0));
+        btnCrearProducto.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnCrearProducto.setForeground(new java.awt.Color(255, 255, 255));
+        btnCrearProducto.setText("Crear");
+        btnCrearProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearProductoActionPerformed(evt);
+            }
+        });
+        pnelGestionProductos.add(btnCrearProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 40));
+
+        btnEditarProducto.setBackground(new java.awt.Color(255, 102, 0));
+        btnEditarProducto.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnEditarProducto.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditarProducto.setText("Editar");
+        btnEditarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarProductoActionPerformed(evt);
+            }
+        });
+        pnelGestionProductos.add(btnEditarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 110, 40));
+
+        btnEliminarProducto.setBackground(new java.awt.Color(255, 0, 0));
+        btnEliminarProducto.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnEliminarProducto.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminarProducto.setText("Eliminar");
+        btnEliminarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarProductoActionPerformed(evt);
+            }
+        });
+        pnelGestionProductos.add(btnEliminarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 110, 40));
+
+        btnListarProductos.setBackground(new java.awt.Color(255, 102, 0));
+        btnListarProductos.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        btnListarProductos.setForeground(new java.awt.Color(255, 255, 255));
+        btnListarProductos.setText("Productos");
+        btnListarProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListarProductosActionPerformed(evt);
+            }
+        });
+        pnelGestionProductos.add(btnListarProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 110, 40));
+
+        jLabel43.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel43.setText("Editar Mesa:");
+        pnelGestionProductos.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, -1, -1));
+
+        txtaListaProductos.setColumns(20);
+        txtaListaProductos.setRows(5);
+        jScrollPane14.setViewportView(txtaListaProductos);
+
+        pnelGestionProductos.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 530, 100));
+
+        jLabel44.setText("Nombre Producto:");
+        pnelGestionProductos.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, -1, -1));
+
+        jLabel45.setText("Precio:");
+        pnelGestionProductos.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+
+        txtCrearPrecioProducto.setText("$");
+        txtCrearPrecioProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCrearPrecioProductoActionPerformed(evt);
+            }
+        });
+        pnelGestionProductos.add(txtCrearPrecioProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 80, 20));
+
+        jLabel46.setText("Estado:");
+        pnelGestionProductos.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, -1, -1));
+
+        jLabel47.setText("Imagen:");
+        pnelGestionProductos.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, -1, -1));
+
+        cbxCrearEstadoProducto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activo", "Inactivo", " " }));
+        pnelGestionProductos.add(cbxCrearEstadoProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, -1, 20));
+
+        cbxCrearImagenProducto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "No Aplica", " " }));
+        pnelGestionProductos.add(cbxCrearImagenProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 150, 20));
+
+        jLabel48.setText("Nombre Producto:");
+        pnelGestionProductos.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, -1, -1));
+        pnelGestionProductos.add(txtEditarNombreProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 400, 200, 20));
+
+        btnBuscarNombreProductoEditar.setText("...");
+        pnelGestionProductos.add(btnBuscarNombreProductoEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 400, -1, -1));
+
+        txtaResultadoEditarProducto.setColumns(20);
+        txtaResultadoEditarProducto.setRows(5);
+        jScrollPane15.setViewportView(txtaResultadoEditarProducto);
+
+        pnelGestionProductos.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 430, 530, 50));
+
+        jLabel49.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel49.setText("Crear Producto:");
+        pnelGestionProductos.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, -1, -1));
+
+        jLabel50.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel50.setText("Eliminar Mesa:");
+        pnelGestionProductos.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 490, -1, -1));
+
+        jLabel51.setText("Nombre Producto:");
+        pnelGestionProductos.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, -1, -1));
+        pnelGestionProductos.add(txtEliminarNombreProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 520, 200, 20));
+
+        btnBuscarNombreProductoEliminar.setText("...");
+        pnelGestionProductos.add(btnBuscarNombreProductoEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 520, -1, -1));
+
+        txtaResultadoEliminarProducto.setColumns(20);
+        txtaResultadoEliminarProducto.setRows(5);
+        jScrollPane16.setViewportView(txtaResultadoEliminarProducto);
+
+        pnelGestionProductos.add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 530, 50));
+
+        jLabel52.setFont(new java.awt.Font("Liberation Sans", 1, 15)); // NOI18N
+        jLabel52.setText("Descripción de Productos:");
+        pnelGestionProductos.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
+
+        txtCrearNombreProducto1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCrearNombreProducto1ActionPerformed(evt);
+            }
+        });
+        pnelGestionProductos.add(txtCrearNombreProducto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 200, 20));
+
+        jTabbedPane1.addTab("Gestión de Productos", pnelGestionProductos);
+
+        pnelPedidosenCurso.setBackground(new java.awt.Color(255, 255, 255));
+        pnelPedidosenCurso.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        tituloCrearPedido4.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        tituloCrearPedido4.setText("Pedidos en Curso");
+        pnelPedidosenCurso.add(tituloCrearPedido4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, -1, 38));
+
+        labelMesas4.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
+        labelMesas4.setText("Mesas: ");
+        pnelPedidosenCurso.add(labelMesas4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
+        jLabel27.setText("jLabel1");
+        pnelPedidosenCurso.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, 120));
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
+        jLabel28.setText("jLabel1");
+        pnelPedidosenCurso.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 120, 120));
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
+        jLabel29.setText("jLabel1");
+        pnelPedidosenCurso.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 120, 120));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
+        jLabel30.setText("jLabel1");
+        pnelPedidosenCurso.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 120, 120));
+
+        rdBtnMesa13.setText("Mesa #4");
+        pnelPedidosenCurso.add(rdBtnMesa13, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
+
+        rdBtnMesa14.setText("Mesa #1");
+        rdBtnMesa14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdBtnMesa14ActionPerformed(evt);
+            }
+        });
+        pnelPedidosenCurso.add(rdBtnMesa14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
+
+        rdBtnMesa15.setText("Mesa #2");
+        pnelPedidosenCurso.add(rdBtnMesa15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, -1, -1));
+
+        rdBtnMesa16.setText("Mesa #3");
+        pnelPedidosenCurso.add(rdBtnMesa16, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jLabel31.setText("Detalles de pedido:");
+        pnelPedidosenCurso.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
+
+        txtaDetallePedidoCerrar2.setColumns(20);
+        txtaDetallePedidoCerrar2.setRows(5);
+        jScrollPane5.setViewportView(txtaDetallePedidoCerrar2);
+
+        pnelPedidosenCurso.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 720, 130));
+
+        btnBuscarCerrarPedido3.setBackground(new java.awt.Color(255, 102, 0));
+        btnBuscarCerrarPedido3.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
+        btnBuscarCerrarPedido3.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarCerrarPedido3.setText("Buscar");
+        btnBuscarCerrarPedido3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarCerrarPedido3ActionPerformed(evt);
+            }
+        });
+        pnelPedidosenCurso.add(btnBuscarCerrarPedido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
+
+        jTabbedPane1.addTab("Pedidos en curso", pnelPedidosenCurso);
 
         pnelChat.setBackground(new java.awt.Color(255, 255, 255));
         pnelChat.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -337,162 +757,6 @@ public class AdminVista extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Chat", pnelChat);
 
-        pnelModificarPedido.setBackground(new java.awt.Color(255, 255, 255));
-        pnelModificarPedido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        tituloCrearPedido1.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
-        tituloCrearPedido1.setText("Modificar Pedido");
-        pnelModificarPedido.add(tituloCrearPedido1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, -1, 38));
-
-        labelMesas1.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
-        labelMesas1.setText("Mesas: ");
-        pnelModificarPedido.add(labelMesas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel11.setText("jLabel1");
-        pnelModificarPedido.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, 120));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel12.setText("jLabel1");
-        pnelModificarPedido.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 120, 120));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel13.setText("jLabel1");
-        pnelModificarPedido.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 120, 120));
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel14.setText("jLabel1");
-        pnelModificarPedido.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 120, 120));
-
-        rdBtnModificarMesa4.setText("Mesa #4");
-        pnelModificarPedido.add(rdBtnModificarMesa4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
-
-        rdBtnModificarMesa1.setText("Mesa #1");
-        rdBtnModificarMesa1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnModificarMesa1ActionPerformed(evt);
-            }
-        });
-        pnelModificarPedido.add(rdBtnModificarMesa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
-
-        rdBtnModificarMesa2.setText("Mesa #2");
-        pnelModificarPedido.add(rdBtnModificarMesa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, -1, -1));
-
-        rdBtnModificarMesa3.setText("Mesa #3");
-        pnelModificarPedido.add(rdBtnModificarMesa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
-
-        txtaDetallePedidoMesa.setColumns(20);
-        txtaDetallePedidoMesa.setRows(5);
-        jScrollPane2.setViewportView(txtaDetallePedidoMesa);
-
-        pnelModificarPedido.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 720, 130));
-
-        btnBuscarModificarPedido.setBackground(new java.awt.Color(255, 102, 0));
-        btnBuscarModificarPedido.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        btnBuscarModificarPedido.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarModificarPedido.setText("Buscar");
-        btnBuscarModificarPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarModificarPedidoActionPerformed(evt);
-            }
-        });
-        pnelModificarPedido.add(btnBuscarModificarPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
-
-        jLabel15.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jLabel15.setText("Detalles de pedido:");
-        pnelModificarPedido.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
-
-        btnModificarPedido.setBackground(new java.awt.Color(255, 0, 0));
-        btnModificarPedido.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        btnModificarPedido.setForeground(new java.awt.Color(255, 255, 255));
-        btnModificarPedido.setText("Modificar Pedido");
-        btnModificarPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnModificarPedidoActionPerformed(evt);
-            }
-        });
-        pnelModificarPedido.add(btnModificarPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 490, 190, 50));
-
-        jTabbedPane1.addTab("Modificar Pedido", pnelModificarPedido);
-
-        pnelCerrarPedido.setBackground(new java.awt.Color(255, 255, 255));
-        pnelCerrarPedido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        tituloCrearPedido2.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
-        tituloCrearPedido2.setText("Cerrar Pedido");
-        pnelCerrarPedido.add(tituloCrearPedido2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, -1, 38));
-
-        labelMesas2.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
-        labelMesas2.setText("Mesas: ");
-        pnelCerrarPedido.add(labelMesas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel16.setText("jLabel1");
-        pnelCerrarPedido.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, 120));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel17.setText("jLabel1");
-        pnelCerrarPedido.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 120, 120));
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel18.setText("jLabel1");
-        pnelCerrarPedido.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 120, 120));
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mesas.png"))); // NOI18N
-        jLabel19.setText("jLabel1");
-        pnelCerrarPedido.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 120, 120));
-
-        rdBtnMesa5.setText("Mesa #4");
-        pnelCerrarPedido.add(rdBtnMesa5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
-
-        rdBtnMesa6.setText("Mesa #1");
-        rdBtnMesa6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdBtnMesa6ActionPerformed(evt);
-            }
-        });
-        pnelCerrarPedido.add(rdBtnMesa6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
-
-        rdBtnMesa7.setText("Mesa #2");
-        pnelCerrarPedido.add(rdBtnMesa7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, -1, -1));
-
-        rdBtnMesa8.setText("Mesa #3");
-        pnelCerrarPedido.add(rdBtnMesa8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
-
-        btnCerrarPedido.setBackground(new java.awt.Color(255, 0, 0));
-        btnCerrarPedido.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        btnCerrarPedido.setForeground(new java.awt.Color(255, 255, 255));
-        btnCerrarPedido.setText("Cerrar Pedido");
-        btnCerrarPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCerrarPedidoActionPerformed(evt);
-            }
-        });
-        pnelCerrarPedido.add(btnCerrarPedido, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 490, 190, 50));
-
-        jLabel20.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jLabel20.setText("Detalles de pedido:");
-        pnelCerrarPedido.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
-
-        txtaDetallePedidoCerrar.setColumns(20);
-        txtaDetallePedidoCerrar.setRows(5);
-        jScrollPane3.setViewportView(txtaDetallePedidoCerrar);
-
-        pnelCerrarPedido.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 720, 130));
-
-        btnBuscarCerrarPedido1.setBackground(new java.awt.Color(255, 102, 0));
-        btnBuscarCerrarPedido1.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        btnBuscarCerrarPedido1.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarCerrarPedido1.setText("Buscar");
-        btnBuscarCerrarPedido1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarCerrarPedido1ActionPerformed(evt);
-            }
-        });
-        pnelCerrarPedido.add(btnBuscarCerrarPedido1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
-
-        jTabbedPane1.addTab("Cerrar Pedido", pnelCerrarPedido);
-
         Background.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 900, 640));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -509,69 +773,89 @@ public class AdminVista extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rdBtnMesa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnMesa1ActionPerformed
+    private void btnCerrarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarChatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rdBtnMesa1ActionPerformed
-
-    private void cbxEntradasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxEntradasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbxEntradasActionPerformed
-
-    private void cbxFritosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxFritosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbxFritosActionPerformed
-
-    private void cbxBebidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxBebidasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbxBebidasActionPerformed
-
-    private void cbxEspecialesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxEspecialesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbxEspecialesActionPerformed
-
-    private void cbxSancochoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxSancochoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cbxSancochoActionPerformed
-
-    private void btnCrearPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearPedidoActionPerformed
-        //MeseroControl.crearPedido();
-    }//GEN-LAST:event_btnCrearPedidoActionPerformed
-
-    private void btnEnviarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarChatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEnviarChatActionPerformed
+    }//GEN-LAST:event_btnCerrarChatActionPerformed
 
     private void btnIniciarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarChatActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIniciarChatActionPerformed
 
-    private void btnCerrarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarChatActionPerformed
+    private void btnEnviarChatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarChatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCerrarChatActionPerformed
+    }//GEN-LAST:event_btnEnviarChatActionPerformed
 
-    private void rdBtnModificarMesa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnModificarMesa1ActionPerformed
+    private void rdBtnMesa14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnMesa14ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rdBtnModificarMesa1ActionPerformed
+    }//GEN-LAST:event_rdBtnMesa14ActionPerformed
 
-    private void btnBuscarModificarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarModificarPedidoActionPerformed
+    private void btnBuscarCerrarPedido3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCerrarPedido3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarModificarPedidoActionPerformed
+    }//GEN-LAST:event_btnBuscarCerrarPedido3ActionPerformed
 
-    private void btnModificarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarPedidoActionPerformed
+    private void cbxRangoFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxRangoFechaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnModificarPedidoActionPerformed
+    }//GEN-LAST:event_cbxRangoFechaActionPerformed
 
-    private void rdBtnMesa6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnMesa6ActionPerformed
+    private void btnListarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarUsuariosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rdBtnMesa6ActionPerformed
+    }//GEN-LAST:event_btnListarUsuariosActionPerformed
 
-    private void btnCerrarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarPedidoActionPerformed
+    private void btnCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCerrarPedidoActionPerformed
+    }//GEN-LAST:event_btnCrearUsuarioActionPerformed
 
-    private void btnBuscarCerrarPedido1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCerrarPedido1ActionPerformed
+    private void btnEditarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarCerrarPedido1ActionPerformed
+    }//GEN-LAST:event_btnEditarUsuarioActionPerformed
+
+    private void btnEliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarUsuarioActionPerformed
+
+    private void txtCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCrearUsuarioActionPerformed
+
+    private void btnCrearMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearMesaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCrearMesaActionPerformed
+
+    private void btnEditarMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarMesaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditarMesaActionPerformed
+
+    private void btnEliminarMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarMesaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarMesaActionPerformed
+
+    private void btnListarMesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarMesasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarMesasActionPerformed
+
+    private void btnCrearProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCrearProductoActionPerformed
+
+    private void btnEditarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditarProductoActionPerformed
+
+    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarProductoActionPerformed
+
+    private void btnListarProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarProductosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarProductosActionPerformed
+
+    private void txtCrearPrecioProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearPrecioProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCrearPrecioProductoActionPerformed
+
+    private void txtCrearNombreProducto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearNombreProducto1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCrearNombreProducto1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -580,24 +864,38 @@ public class AdminVista extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Background;
-    private javax.swing.JButton btnBuscarCerrarPedido1;
-    private javax.swing.JButton btnBuscarModificarPedido;
+    private javax.swing.JButton btnBuscarCerrarPedido3;
+    private javax.swing.JButton btnBuscarNombreMesaEditar;
+    private javax.swing.JButton btnBuscarNombreMesaEliminar;
+    private javax.swing.JButton btnBuscarNombreProductoEditar;
+    private javax.swing.JButton btnBuscarNombreProductoEliminar;
+    private javax.swing.JButton btnBuscarNombreUsuarioEditar1;
+    private javax.swing.JButton btnBuscarUsuarioEliminar;
     private javax.swing.JButton btnCerrarChat;
-    private javax.swing.JButton btnCerrarPedido;
-    private javax.swing.JButton btnCrearPedido;
+    private javax.swing.JButton btnCrearMesa;
+    private javax.swing.JButton btnCrearProducto;
+    private javax.swing.JButton btnCrearUsuario;
+    private javax.swing.JButton btnEditarMesa;
+    private javax.swing.JButton btnEditarProducto;
+    private javax.swing.JButton btnEditarUsuario;
+    private javax.swing.JButton btnEliminarMesa;
+    private javax.swing.JButton btnEliminarProducto;
+    private javax.swing.JButton btnEliminarUsuario;
     private javax.swing.JButton btnEnviarChat;
     private javax.swing.JButton btnIniciarChat;
-    private javax.swing.JButton btnModificarPedido;
-    private javax.swing.JSpinner cantBebidas;
-    private javax.swing.JSpinner cantEntradas;
-    private javax.swing.JSpinner cantEspeciales;
-    private javax.swing.JSpinner cantFritos;
-    private javax.swing.JSpinner cantSancocho;
-    private javax.swing.JComboBox<String> cbxBebidas;
-    private javax.swing.JComboBox<String> cbxEntradas;
-    private javax.swing.JComboBox<String> cbxEspeciales;
-    private javax.swing.JComboBox<String> cbxFritos;
-    private javax.swing.JComboBox<String> cbxSancocho;
+    private javax.swing.JButton btnListarMesas;
+    private javax.swing.JButton btnListarProductos;
+    private javax.swing.JButton btnListarUsuarios;
+    private javax.swing.JComboBox<String> cbxCrearCapacidadMesa;
+    private javax.swing.JComboBox<String> cbxCrearEstadoMesa;
+    private javax.swing.JComboBox<String> cbxCrearEstadoProducto;
+    private javax.swing.JComboBox<String> cbxCrearEstadoUsuario;
+    private javax.swing.JComboBox<String> cbxCrearImagenProducto;
+    private javax.swing.JComboBox<String> cbxCrearRolUsuario;
+    private javax.swing.JComboBox<String> cbxCrearUbicacionMesa;
+    private javax.swing.JComboBox<String> cbxMeseroBusqueda;
+    private javax.swing.JComboBox<String> cbxProductoBusqueda;
+    private javax.swing.JComboBox<String> cbxRangoFecha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -612,48 +910,96 @@ public class AdminVista extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JLabel labelMesas;
-    private javax.swing.JLabel labelMesas1;
-    private javax.swing.JLabel labelMesas2;
-    private javax.swing.JLabel labelProductos;
-    private javax.swing.JLabel labelProductos1;
-    private javax.swing.JLabel labelProductos2;
-    private javax.swing.JLabel labelProductos3;
-    private javax.swing.JLabel labelProductos4;
-    private javax.swing.JLabel labelProductos5;
-    private javax.swing.JPanel pnelCerrarPedido;
+    private javax.swing.JLabel labelMesas4;
     private javax.swing.JPanel pnelChat;
-    private javax.swing.JPanel pnelCrearPedido;
-    private javax.swing.JPanel pnelModificarPedido;
-    private javax.swing.JRadioButton rdBtnMesa1;
-    private javax.swing.JRadioButton rdBtnMesa2;
-    private javax.swing.JRadioButton rdBtnMesa3;
-    private javax.swing.JRadioButton rdBtnMesa4;
-    private javax.swing.JRadioButton rdBtnMesa5;
-    private javax.swing.JRadioButton rdBtnMesa6;
-    private javax.swing.JRadioButton rdBtnMesa7;
-    private javax.swing.JRadioButton rdBtnMesa8;
-    private javax.swing.JRadioButton rdBtnModificarMesa1;
-    private javax.swing.JRadioButton rdBtnModificarMesa2;
-    private javax.swing.JRadioButton rdBtnModificarMesa3;
-    private javax.swing.JRadioButton rdBtnModificarMesa4;
+    private javax.swing.JPanel pnelGestionMesas;
+    private javax.swing.JPanel pnelGestionProductos;
+    private javax.swing.JPanel pnelGestionUsuarios;
+    private javax.swing.JPanel pnelPedidosenCurso;
+    private javax.swing.JPanel pnelResumenVentas;
+    private javax.swing.JRadioButton rdBtnMesa13;
+    private javax.swing.JRadioButton rdBtnMesa14;
+    private javax.swing.JRadioButton rdBtnMesa15;
+    private javax.swing.JRadioButton rdBtnMesa16;
     private javax.swing.JLabel titulo;
-    private javax.swing.JLabel tituloCrearPedido;
-    private javax.swing.JLabel tituloCrearPedido1;
     private javax.swing.JLabel tituloCrearPedido2;
-    private javax.swing.JTextArea txtaDetallePedidoCerrar;
-    private javax.swing.JTextArea txtaDetallePedidoMesa;
+    private javax.swing.JLabel tituloCrearPedido3;
+    private javax.swing.JLabel tituloCrearPedido4;
+    private javax.swing.JLabel tituloGestionUsuarios;
+    private javax.swing.JLabel tituloResumenVentas;
+    private javax.swing.JTextField txtCrearNombreCompleto;
+    private javax.swing.JTextField txtCrearNombreMesa;
+    private javax.swing.JTextField txtCrearNombreProducto1;
+    private javax.swing.JTextField txtCrearPrecioProducto;
+    private javax.swing.JTextField txtCrearUsuario;
+    private javax.swing.JTextField txtEditarNombreMesa;
+    private javax.swing.JTextField txtEditarNombreProducto;
+    private javax.swing.JTextField txtEditarNombreUsuario;
+    private javax.swing.JTextField txtEliminarNombreMesa;
+    private javax.swing.JTextField txtEliminarNombreProducto;
+    private javax.swing.JTextField txtEliminarUsuario;
+    private javax.swing.JTextArea txtaBusquedaFiltrada;
+    private javax.swing.JTextArea txtaDetallePedidoCerrar2;
+    private javax.swing.JTextArea txtaListaMesas;
+    private javax.swing.JTextArea txtaListaProductos;
+    private javax.swing.JTextArea txtaListaUsuarios;
+    private javax.swing.JTextArea txtaProductosVendidos;
+    private javax.swing.JTextArea txtaProductosVendidos1;
+    private javax.swing.JTextArea txtaResultadoEditarMesa;
+    private javax.swing.JTextArea txtaResultadoEditarProducto;
+    private javax.swing.JTextArea txtaResultadoEditarUsuario;
+    private javax.swing.JTextArea txtaResultadoEliminarMesa;
+    private javax.swing.JTextArea txtaResultadoEliminarProducto;
+    private javax.swing.JTextArea txtaResultadoEliminarUsuario;
     // End of variables declaration//GEN-END:variables
 }
