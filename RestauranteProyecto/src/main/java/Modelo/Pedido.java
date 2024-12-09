@@ -57,7 +57,6 @@ public class Pedido {
         try {
             Pedido.agregarProductoAPedido(conn, this.id_pedido, producto.getId(), cantidad);
         } catch (SQLException e) {
-            // Manejar la excepción de la base de datos
             throw new SQLException("Error al agregar producto al pedido: " + e.getMessage());
         }
     }

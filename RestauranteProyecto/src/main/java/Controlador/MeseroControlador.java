@@ -29,6 +29,16 @@ public class MeseroControlador {
         inicializarEventos();
     }
 
+    // Asegúrate de cerrar la conexión cuando ya no la necesites
+    public void cerrarConexion() {
+        if (conexion != null) {
+            try {
+                conexion.close();
+            } catch (SQLException e) {
+                System.err.println("Error al cerrar la conexión: " + e.getMessage());
+            }
+        }
+    }
     private void inicializarEventos()  {
         
         meseVista.getCbxEntradas().addActionListener(e -> agregarProducto("Entradas"));

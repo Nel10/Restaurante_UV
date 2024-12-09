@@ -4,11 +4,13 @@
  */
 package Controlador;
 
+import Conexion.ConexionBD;
 import Modelo.UsuarioModelo;
 import Vista.AdminVista;
 import Vista.LoginVista;
 import Vista.MeseroVista;
 import java.awt.event.ActionEvent;
+import java.sql.Connection;
 import javax.swing.JOptionPane;
 
 /**
@@ -57,25 +59,27 @@ public class LoginControlador {
     }
 
     public void loginEntrar(String usuario, String contrasena) {
-        // Validamos las credenciales con el modelo
-        if (usuarioModelo.validarUsuario(usuario, contrasena)) {
-            // Verificamos si el usuario es administrador o mesero
-            if (usuarioModelo.esAdministrador(usuario)) {
-                // Si el usuario es administrador, solo mostramos la vista de Admin si no está ya abierta
-                if (adminVista == null) {
-                    adminVista = new AdminVista();
-                    adminVista.setVisible(true);
-                }
-            } else {
-                // Si el usuario es mesero, solo mostramos la vista de Mesero si no está ya abierta
-                if (meseroVista == null) {
-                    meseroVista = new MeseroVista();
-                    meseroVista.setVisible(true);
-                }
+        ConexionBD conexionBD = new ConexionBD();
+        Connection conexion = conexionBD.getConexion(); // Obtener la conexión
+    // Validamos las credenciales con el modelo
+    if (usuarioModelo.validarUsuario(usuario, contrasena, conexion)) { 
+        // Verificamos si el usuario es administrador o mesero
+        if (usuarioModelo.esAdministrador(usuario, conexion)) { 
+            // Si el usuario es administrador, solo mostramos la vista de Admin si no está ya abierta
+            if (adminVista == null) {
+                adminVista = new AdminVista();
+                adminVista.setVisible(true);
             }
-            lgvista.setVisible(false);  // Cerrar la ventana de login al iniciar sesión
         } else {
-            JOptionPane.showMessageDialog(lgvista, "Usuario o contraseña incorrectos", "Error", JOptionPane.ERROR_MESSAGE);
+            // Si el usuario es mesero, solo mostramos la vista de Mesero si no está ya abierta
+            if (meseroVista == null) {
+                meseroVista = new MeseroVista();
+                meseroVista.setVisible(true);
+            }
         }
+        lgvista.setVisible(false);  // Cerrar la ventana de login al iniciar sesión
+    } else {
+        JOptionPane.showMessageDialog(lgvista, "Usuario o contraseña incorrectos", "Error", JOptionPane.ERROR_MESSAGE);
     }
+}
 }
